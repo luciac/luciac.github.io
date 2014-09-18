@@ -54,3 +54,12 @@ table {
 /* END RESET */
 
 
+body { font-family:Archer; font-size:14px; padding-left:50px; padding-top;50px;}
+section#content { margin:0 auto; width:960px; padding:50px 50px; }
+span { font-style: italic; }
+h1 { font-family:Bebas; text-transform:uppercase; font-size:50px; font-weight:bold;}
+h2 { font-size:25px; font-weight:bold; color:black;  padding-top:30px;}
+h4 { font-size:20px;}
+h5 { font-family:Bebas; font-size:20px; font-weight:bold;}
+h6 { padding-left:20px; padding-bottom:10px;}
+p {padding-top:10px;}
