@@ -45,7 +45,7 @@ table {
 /*THIS IS WHERE I STARTEEDDDD ABOVE IS COPPIED AND PASTEDDDDD*/
 
 body { font-family:Lora; padding-right:50px; padding-left:30px; padding-top:40px; color:#FFFFFF; background-color:black;}
-p { font-family:Lora; color:white; }
+p { font-family:Lora; color:white; line-height:1.4em;}
 h1 { font-family:Hammersmith One; font-size:5em; color:#FF0066; }
 h3 { font-family:Hammersmith One; font-size:2em; padding-top:15px; color:#FF599C;}
 img { max-width:60%; }
