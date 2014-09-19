@@ -51,9 +51,10 @@ table {
 }
 
 /* END RESET */
-body { font-family:'Averia'; }
-h1 { font-family:'Monserrat'; }
-p { font-family:'Averia'; }
+body { font-family:Averia Serif Libre; padding-left:20px; }
+h1 { font-family:Montserrat; font-weight: 700; font-size:40px; padding-left:20px;}
+h2 { font-family:Montserrat; font-size:20px; padding-left:20px; }
+p { font-family:Averia Serif Libre; padding-left:20px; }
 
 
 
