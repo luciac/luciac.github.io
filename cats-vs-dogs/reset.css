@@ -50,6 +50,12 @@ table {
 	border-spacing: 0;
 }
 
+/* END RESET */
+body { font-family:'Averia'; }
+h1 { font-family:'Monserrat'; }
+p { font-family:'Averia'; }
+
+
 
 /* Center Content */
 
