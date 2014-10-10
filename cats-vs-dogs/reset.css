@@ -57,26 +57,26 @@ table {
 
 /*
 section .nav {margin:0 auto; display:inline-block;}*/
-img .logo {margin:0 auto; width: 400px;}
-body {padding-left: 10%; padding-top:5%;  padding-right:10%;}
-nav {margin:0 auto; border-style:solid hidden solid hidden; margin:5px; padding-bottom:15px; }
-li {float:left; margin:0 auto; padding-left:10px; padding-right:10px; text-transform:uppercase; }
-#both {margin:30px;}
-#left {display:inline; float:left; width:40%; }
-#right {display:inline; float:right; width:40%; border-style:hidden hidden solid hidden;}
-footer { margin:10px; position:relative; bottom:5%; left:5%;}
 
-/*wtf am i doing wronggggggg like wtf is happening with this footer man like whaaaattttt yo. damn man. i'm done with this shit. i'll figure it out later. but wait WHY IN THE NAME OF SWEET JIGGLY BABY CARROTS ISN'T THE BORDER SHOWING THE FUCK UPPPPPPP ALKSJFASFJASKDJFAS  */
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-	}
+img .logo {margin:10px; padding:30px;}
 
-.clearfix { display: inline-block; }
-  html[xmlns] .clearfix { display: block; }
-  * html .clearfix { height: 1%; }
+body {padding-left: 0%; padding-top:5%;  padding-right:0%; position:relative; text-align:center; }
+
+nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-bottom:10px; padding-top:10px; }
+
+li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:2em; list-style-type:disc;}
+
+#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; border-bottom:solid 3px; height:400px;/*i think i cheeted here. how do you spell cheated*/}
+
+#left {float:left; width:43%; padding:5px; padding-right:5%;}
+
+#right {float:left; width:43%; padding:5px;}
+
+h2 {font-size:1.5em; text-align:left; padding-top:8px; font-weight:bold; }
+
+p {text-align:left; }
+
+/* footer { clear:both; margin:10px; padding-top:4px; text-align:left;}*/
+footer p .wiki { float:left;}
+footer p .copy { float:right; text-align:right; }
