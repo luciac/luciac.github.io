@@ -56,8 +56,9 @@ table {
 
 
 
-h1 {font-family:helvetica; font-size:2em; font-weight:bold; }
-h2 {font-family:helvetica; font-size:1.5em; font-weight:bold; }
+h1 {font-family:helvetica; font-size:1.5em; font-weight:bold; padding-top:10px; }
+h2 {font-family:helvetica; font-size:.75em; color:grey; padding-top:5px; padding-bottom:10px; }
 p {/*idk what the fuck to do*/}
 body { margin:50px;}
-article {width: 40%; padding-right:30px; float:left;}  /*WHY THE FUCK DID IT WORK HEREEEE BUT NOT THEREEEE!?!?!*/
+article {font-family:helvetica; font-size:.9em; width: 40%; padding-right:30px; float:left;}  /*WHY THE FUCK DID IT WORK HEREEEE BUT NOT THEREEEE!?!?!*/
+img {float:left; margin:10px; }
