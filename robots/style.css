@@ -50,3 +50,23 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+
+
+/*Enddddddddddddddd */
+
+
+
+
+#site-header {position:relative; height:120px; background-color:#EFF3DC; }
+#site-header h1 {position:absolute; left:15px; }
+#top-nav {position:absolute; right:15px; font-family: helvetica; font-size:.5em; color:#4f3a11;}
+a:link {text-decoration: none; color:#4f3a11; }
+
+#main-menu {position:relative; height:30px; background-color:#996633; }
+#main-menu li {float:left; display:block; padding:10px; font-family: helvetica; text-transform:uppercase; color:white; font-weight:bold; font-size:.8em; }
+#main-menu li a {color:white; font-weight:bold; }
