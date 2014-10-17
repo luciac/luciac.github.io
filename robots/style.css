@@ -70,3 +70,12 @@ a:link {text-decoration: none; color:#4f3a11; }
 #main-menu {position:relative; height:30px; background-color:#996633; }
 #main-menu li {float:left; display:block; padding:10px; font-family: helvetica; text-transform:uppercase; color:white; font-weight:bold; font-size:.9em; }
 #main-menu li a {color:white; font-weight:bold; }
+
+#page {float:left; width: 60%; padding:10px; }
+#sidebar {float:right; width: 30%; padding:10px; }
+
+
+#footer-wrapper {clear:both; position:relative; height:100px; background-color:brown; }
+#footer-contact {color:white; float:left; width:20%; }
+#footer-follow {float:right; }
+#footer-follow li {float:left; }
