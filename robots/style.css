@@ -67,22 +67,33 @@ table {
 #top-nav {position:absolute; right:15px; font-family: helvetica; font-size:.5em; color:#4f3a11; padding-right:10%; }
 a:link {text-decoration: none; color:#4f3a11; }
 
-#main-menu {position:relative; height:30px; background-color:#996633; padding-left:10%; }
+#main-menu {position:relative; height:30px; background-color:#765433; padding-left:10%; }
 #main-menu li {float:left; display:block; padding:10px; font-family: helvetica; text-transform:uppercase; color:white; font-weight:bold; font-size:.9em; }
 #main-menu li a {color:white; font-weight:bold; }
 
+
+
+
 #page {float:left; width: 40%; padding:40px; padding-left:10%; }
-#page h1 {font-family:helvetica; font-size:2em; font-weight:bold; text-transform:uppercase; color:#996633; }
+#page h1 {font-family:helvetica; font-size:2em; font-weight:bold; text-transform:uppercase; color:#765433; }
 /*CHANGEEEEEEEEEEEEEE COLOR*/
-#page h2 {font-family:helvetica; font-size:1.25em; font-weight:bold; text-transform:uppercase; color:#996633; padding-top:15px; }
-#page p {font-family:helvetica; padding-top:10px; font-size:.75em; }
-
-#sidebar {float:right; width: 25%; padding:40px; padding-right:10%; }
+#page h2 {font-family:helvetica; font-size:1.25em; font-weight:bold; text-transform:uppercase; color:#765433; padding-top:15px; }
+#page p {font-family:helvetica; padding-top:10px; font-size:.75em; line-height:1.25em; }
 
 
 
+#sidebar {float:right; width: 25%; padding:40px; padding-right:10%; padding-top:60px; }
+#sidebar h1 {font-family:helvetica; font-size:1.25em; font-weight:bold; text-transform:uppercase; color:#765433; padding-bottom:15px; }
+#sidebar li {font-family:helvetica; font-size:.75em; padding-bottom:10px; }
 
-#footer-wrapper {clear:both; position:relative; height:100px; background-color:#996633; }
-#footer-contact {color:white; float:left; width:20%; padding-left:10%; }
+
+
+
+#footer-wrapper {clear:both; position:relative; height:100px; background-color:#936940; }
+#footer-contact {color:white; float:left; width:15%; padding-left:10%; }
+#footer-contact h1 {font-family:helvetica; text-transform:uppercase; padding-top:10px; color:#CFBCA9; } 
+#footer-contact p {font-family:helvetica; font-size:.75em; line-height:1.2em;}
+
 #footer-follow {float:right; padding-right:10%; }
+#footer-follow h1 {font-family:helvetica; text-transform:uppercase; padding-top:10px; color:white; color:#CFBCA9; } 
 #footer-follow li {float:left; }
