@@ -63,19 +63,26 @@ table {
 
 
 #site-header {position:relative; height:120px; background-color:#EFF3DC; }
-#site-header h1 {position:absolute; left:15px; }
-#top-nav {position:absolute; right:15px; font-family: helvetica; font-size:.5em; color:#4f3a11;}
+#site-header h1 {position:absolute; left:15px; padding-left:10%; }
+#top-nav {position:absolute; right:15px; font-family: helvetica; font-size:.5em; color:#4f3a11; padding-right:10%; }
 a:link {text-decoration: none; color:#4f3a11; }
 
-#main-menu {position:relative; height:30px; background-color:#996633; }
+#main-menu {position:relative; height:30px; background-color:#996633; padding-left:10%; }
 #main-menu li {float:left; display:block; padding:10px; font-family: helvetica; text-transform:uppercase; color:white; font-weight:bold; font-size:.9em; }
 #main-menu li a {color:white; font-weight:bold; }
 
-#page {float:left; width: 60%; padding:10px; }
-#sidebar {float:right; width: 30%; padding:10px; }
+#page {float:left; width: 40%; padding:40px; padding-left:10%; }
+#page h1 {font-family:helvetica; font-size:2em; font-weight:bold; text-transform:uppercase; color:#996633; }
+/*CHANGEEEEEEEEEEEEEE COLOR*/
+#page h2 {font-family:helvetica; font-size:1.25em; font-weight:bold; text-transform:uppercase; color:#996633; padding-top:15px; }
+#page p {font-family:helvetica; padding-top:10px; font-size:.75em; }
+
+#sidebar {float:right; width: 25%; padding:40px; padding-right:10%; }
 
 
-#footer-wrapper {clear:both; position:relative; height:100px; background-color:brown; }
-#footer-contact {color:white; float:left; width:20%; }
-#footer-follow {float:right; }
+
+
+#footer-wrapper {clear:both; position:relative; height:100px; background-color:#996633; }
+#footer-contact {color:white; float:left; width:20%; padding-left:10%; }
+#footer-follow {float:right; padding-right:10%; }
 #footer-follow li {float:left; }
