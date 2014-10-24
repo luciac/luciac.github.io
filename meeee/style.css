@@ -47,13 +47,37 @@ table {
 	border-spacing: 0;
 }
 
-/* Add Styles Here */
-body { font-family:Times; font-size:14px; }
-section#content { margin:0 auto; width:960px; padding:20px 0px; }
 
-h1 { font-family: Homemade Apple; font-size:48px; font-weight:bold; color:black; text-align:center; }
-h2 { font-family: Homemade Apple; font-size:36px; font-weight:bold; color:black; text-align:center; line-height:60px; }
+
+
+
+
+/* Add Styles Here */
+body { font-family:Times; font-size: 1em; }
+section #content { margin:0 auto; width:960px; padding:20px 0px; }
+
+h1 { font-family: Homemade Apple; font-size:3.25em; font-weight:bold; color:black; text-align:center; }
+h2 { font-family: Homemade Apple; font-size:2.25em; font-weight:bold; color:black; text-align:center; line-height:2.25em; }
 p { padding-bottom:10px; padding-top:30px; text-align:center; color:#6b6b7d; }
-img { max-width:45%; align: center;}
+img { max-width:50%; align: center;}
 img.center {display: block; margin-left: auto; margin-right: auto;}
 
+
+
+
+
+
+
+@media screen and (max-width:800px) 
+ {
+   h1 {font-size:2.25em; }
+   h2 {font-size:1.5em; }
+   img{ max-width:60%; }
+  }
+
+
+@media screen and (max-width:550px)
+ {
+  h1 {font-size:2em; }
+  h2 {font-size:1.25em; }
+  img {max-width:75%;}
