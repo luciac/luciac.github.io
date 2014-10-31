@@ -67,16 +67,139 @@ nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-botto
 
 li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:2em; list-style-type:disc;}
 
-#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; border-bottom:solid 3px; height:400px;/*i think i cheeted here. how do you spell cheated*/}
 
-#left {float:left; width:43%; padding:5px; padding-right:50px;}
 
-#right {float:left; width:43%; padding:5px;}
+
+img.dogg {max-height:242px; }
+
+img.catt {max-height:242px; }
+
+
+#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; font-size:14px;  /*           border-bottom:solid 3px; height:400px          i think i cheeted here. how do you spell cheated*/}
+
+#left {float:left; width:43%; padding:2.5%; padding-right:50px;}
+
+#right {float:left; width:43%; padding:2.5%;}
 
 h2 {font-size:1.5em; text-align:left; padding-top:8px; font-weight:bold; }
 
 p {text-align:left; }
 
 /* footer { clear:both; margin:10px; padding-top:4px; text-align:left;}*/
-footer p .wiki { float:left;}
-footer p .copy { float:right; text-align:right; }
+footer {clear:both; border-top:solid 3px; position:relative; bottom:3%; font-size:.75em; }
+footer .wiki { float:left; padding-left:4.5%; }
+footer .copy { float:right; text-align:right; padding-right:4.5%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px)
+  {
+	nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-bottom:10px; padding-top:10px; }
+	li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:1.5em; list-style-type:disc;}
+	img.dogg {max-width:100%; }
+	img.catt {max-width:100%; }
+	
+	#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; height:500px; /*           border-bottom:solid 3px; height:400px          i think i cheeted here. how do you spell cheated*/}
+
+#left {float:left; width:43%; padding:2.5%; padding-right:6%;}
+
+#right {float:left; width:43%; padding:2.5%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 740px)
+  {
+	img.logo {max-width:50%;}
+	nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-bottom:10px; padding-top:10px; }
+	li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:1em; list-style-type:disc;}
+	img.dogg {max-width:100%; }
+	img.catt {max-width:100%; }
+	
+	#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; height:500px; /*           border-bottom:solid 3px; height:400px          i think i cheeted here. how do you spell cheated*/}
+
+#left {float:left; width:43%; padding:2.5%; padding-right:6%;}
+
+#right {float:left; width:43%; padding:2.5%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px)
+  {
+	img.logo {max-width:50%;}
+	nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-bottom:10px; padding-top:10px; }
+	li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:1em; list-style-type:disc;}
+	img.dogg {max-width:100%; }
+	img.catt {max-width:100%; }
+	
+	#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; height:500px; /*           border-bottom:solid 3px; height:400px          i think i cheeted here. how do you spell cheated*/}
+
+#left {float:left; width:43%; padding:2.5%; padding-right:6%;}
+
+#right {float:left; width:43%; padding:2.5%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 560px)
+  {
+	img.logo {max-width:50%;}
+	nav {margin:0 auto; border-top:solid 3px; border-bottom:solid 3px; padding-bottom:10px; padding-top:10px; }
+	li {display:inline-block; padding-left:10px; padding-right:10px; text-transform:uppercase; font-weight:bold; font-size:.75em; list-style-type:disc;}
+	img.dogg {max-width:100%; }
+	img.catt {max-width:100%; }
+	
+	#both {padding-left:2%; padding-right:2%; padding-bottom:4%; padding-top:1%; height:500px; font-size:12px; /*           border-bottom:solid 3px; height:400px          i think i cheeted here. how do you spell cheated*/}
+

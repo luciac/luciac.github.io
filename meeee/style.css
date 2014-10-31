@@ -89,7 +89,7 @@ img.center {display: block; margin-left: auto; margin-right: auto;}
   }
 
 
-@media screen and (max-width:550px)
+@media screen and (max-width:650px)
  {
   h1 {font-size:2em; }
   h2 {font-size:1.25em; }
@@ -103,7 +103,7 @@ img.center {display: block; margin-left: auto; margin-right: auto;}
 
 
 
-@media handheld and (max-width:550px)
+@media handheld and (max-width:650px)
  {
   h1 {font-size:2em; }
   h2 {font-size:1.25em; }
