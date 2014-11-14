@@ -67,8 +67,8 @@ table {
 p {font-family:helvetica; padding-top:20px; line-height:1.4em;}
 h1 {text-align:center; font-size:2em;}
 article {width:80%; padding-bottom:10px; padding-left:10%; padding-right:10%; }
-h2 {font-size:4em;}
-img {max-width:50%; align:center; display:block; margin-left:auto; margin-right:auto; padding-top:40px; padding-bottom:10px; }
+h2 {font-size:4em; padding-top:100px; }
+img {max-width:60%; align:center; display:block; margin-left:auto; margin-right:auto; padding-top:100px; padding-bottom:20px; }
 
 
 
