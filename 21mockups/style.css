@@ -62,16 +62,24 @@ table {
 
 /*THIS IS WHERE I STARTEEDDDD ABOVE IS COPPIED AND PASTEDDDDD*/
 
-body { font-family:Open Sans; padding-right:50px; padding-left:15%; padding-top:40px; color:#FFFFFF;}
-article { padding-bottom:100px; }
+body { font-family:Open Sans; padding-right:50px; /*padding-left:15%;*/ padding-top:40px; color:#FFFFFF;}
+article { padding-bottom:100px; max-width:40%; padding-right:5%; padding-left:5%;}
 p { font-family:Open Sans; color:white; line-height:1.4em; }
 h1 { font-family:Open Sans; font-size:3em; color:grey; padding-left:2%; }
 h3 { font-family:Open Sans; font-size:1.4em; padding-top:15px; padding-bottom:60px; color:darkgrey; padding-left:2%; }
-img { max-width:30%; }
+img { max-width:100%; }
 #gif { max-width:70%; }
 
 
 
-/* 
-HOLY SHIT THE PLANT JUST MOVED. DUDE NO IM SO FUCKING SERIOUS RIGHT NOW. IT MOVED. I SWEAR.. YES IT DID. NOT CAZY. BUT THAT SHIT WAS CRAZY. OMG. WHY.
-*/
+
+@media screen and (max-width:720px)
+{
+	article { padding-bottom:100px; max-width:80%; padding-right:10%; padding-left:10%; }
+p { font-family:Open Sans; color:white; line-height:1.4em; }
+h1 { font-family:Open Sans; font-size:3em; color:grey; padding-left:2%; }
+h3 { font-family:Open Sans; font-size:1.4em; padding-top:15px; padding-bottom:60px; color:darkgrey; padding-left:2%; }
+img { max-width:70%; }
+
+}
+
