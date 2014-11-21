@@ -1,3 +1,9 @@
+.parallax-container {
+    min-height: 400px;
+    background: transparent;
+}
+
+
 section {
   padding: 25px 0 35px;
   background: #fff;
