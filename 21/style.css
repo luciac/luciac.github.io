@@ -66,9 +66,15 @@ table {
 /*body {background-color:black; color:white;}*/
 p {font-family:helvetica; padding-top:20px; line-height:1.4em;}
 h1 {text-align:center; font-size:2em;}
-article {font-family:open sans; width:80%; padding-bottom:10px; padding-left:10%; padding-right:10%; }
+article {font-family:open sans; width:80%; padding-bottom:10px; padding-left:10%; padding-right:10%; padding-bottom:5%; }
 h2 {font-size:4em; padding-top:100px; }
 img {max-width:60%; align:center; display:block; margin-left:auto; margin-right:auto; padding-top:100px; padding-bottom:20px; }
+#one {background-color:#f8d788; }
+#four {background-color:#6b6969; }
+#five {background-color:#f9e2a4; }
+#six {background-color:#91b2d6; }
+#seven {background-color:#9b476b; }
+#eight {background-color:#62c9ef; }
 
 
 
