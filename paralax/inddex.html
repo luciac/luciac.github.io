@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OMG! Science.</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });
+    </script>
+    <script src="js/parallax.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="ios-notice" class="alert alert-info hidden"><p><strong>21 SECRETS OF THE UNIVERSE</strong> </p></div>
+      </div>
+    </section>
+
+
+$('.parallax-window').parallax({imageSrc: 'images/1.png'});
+
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/1.png" data-natural-width="auto" data-natural-height="auto"></div>
+
+
+
+
+
+
+    <section>
+      <div class="container">
+        <h2 id="installation">Installation</h2>
+
+        <p>When humans turn 21, if they are found to be worthy, they will be awarded the 21 secrets of the universe. If you are reading this now on your 21st birthday... You are worthy. Congratulations! </p>
+
+      </div>
+    </section>
+
+
+
+
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="images/2.png" data-natural-width="1400" data-natural-height="1400"></div>
+
+    <section>
+      <div class="container">
+        <h2 id="options">Options</h2>
+        <p>Options can be passed in via data attributes of JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-image-src=&quot;&quot;</code>.</p>
+      </div>
+    </section>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src=".images/hair.jpg" data-natural-width="auto" data-natural-height="auto"></div>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/reflection-nebula-750x763.jpg" data-natural-width="750" data-natural-height="763"></div>
+
+
+
+
+
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20587204-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var load = function(src){
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = src;
+          var e = document.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e);
+        };
+        load(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
+      })();
+    </script>
+  </body>
+</html>
