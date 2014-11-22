@@ -71,13 +71,14 @@ table {
 
 
 
-/*
 .parallax-container {background-color:lightblue; 
 
-    min-height: 400px;
-    background: transparent; }*/
+    min-height: 600px;
+    background: transparent; }
 
 #one {background-color:#f8d788; }
+#two {background-color:#f8d788; }
+
 
 
 
