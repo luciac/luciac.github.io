@@ -82,7 +82,7 @@ table {
 
 
 
-.container {background-color:grey; }
+.container {background-color:lightgrey; }
 
 nav {position:fixed; top:0px; left:0px;}
 h1 {font-family:Open Sans; font-weight:bold; padding-top:20px; line-height:1.4em; padding:10%; }
