@@ -109,7 +109,7 @@ box-sizing: border-box; transform-style: inherit;}
   
   
 .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
-.photo {background:1%; background-size:10%; height:60%;}
+.photo {background:1%; background-size:60%; height:75%; top:0px;}
 
 
 
@@ -120,25 +120,25 @@ h1 {font-family:Delius Unicase; font-weight:bold; padding-top:20px; line-height:
 p {font-family:Delius; padding-top:20px; line-height:1.4em; padding:0%; }
 
 #top {background-color:#f8d788; background-attachment: fixed; }
-#one {background-image: url("images/1.png"); background-attachment: fixed; background-color:#f8d788; }
+#one {background-image: url("images/1.png"); background-attachment: fixed; background-repeat: no-repeat; background-color:#f8d788; }
 #un {}
-#two {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; }
+#two {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; background-repeat: no-repeat; }
 #deux {}
-#three {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; }
+#three {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; background-repeat: no-repeat; }
 #trois {}
-#four {background-image: url("images/4.png"); background-attachment: fixed; background-color:#6b6969; font-family:Delius Swash Caps; }
-#quatre {}
-#five {background-image: url("images/5.png"); background-attachment: fixed; background-color:#f9e2a4; }
+#four {background-image: url("images/4.png"); background-attachment: fixed; background-color:#6b6969; background-repeat: no-repeat; } 
+#quatre {font-family:Delius Swash Caps; }
+#five {background-image: url("images/5.png"); background-attachment: fixed; background-color:#f9e2a4; background-repeat: no-repeat; }
 #cinq {}
-#six {background-image: url("images/6.png"); background-attachment: fixed; background-color:#91b2d6; }
+#six {background-image: url("images/6.png"); background-attachment: fixed; background-color:#91b2d6; background-repeat: no-repeat; }
 #sixx {}
-#seven {background-image: url("images/7.png"); background-attachment: fixed; background-color:#9b476b; color:white; }
+#seven {background-image: url("images/7.png"); background-attachment: fixed; background-color:#9b476b; background-repeat: no-repeat; color:white; }
 #sept {}
-#eight {background-image: url("images/8.png"); background-attachment: fixed; background-color:#62c9ef; }
+#eight {background-image: url("images/8.png"); background-attachment: fixed; background-color:#62c9ef; background-repeat: no-repeat; }
 #huit {}
-#nine {background-image: url("images/9.png"); background-attachment: fixed; background-color:#000034; color:white; }
+#nine {background-image: url("images/9.png"); background-attachment: fixed; background-color:#000034; background-repeat: no-repeat; color:white; }
 #neuf {}
-#ten {background-image: url("images/10.png"); background-attachment: fixed; background-color:#CABFB6; }
+#ten {background-image: url("images/10.png"); background-attachment: fixed; background-color:#CABFB6; background-repeat: no-repeat; }
 #dix {}
 /*MINE*/
 
