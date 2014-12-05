@@ -71,8 +71,9 @@ table {
 
 
 
-.parallax-container {background-color:lightblue; 
-
+.parallax-container {
+	background-color:lightblue; 
+	z-index:100;
     min-height: 600px;
     background: transparent; } /*ITS THIS BITCH RIGHT HERE!!! WHY DO YOU HATE ME BACKGROUND!?!?!?! WHYYYYYYYYYYY*/
 
@@ -80,7 +81,7 @@ table {
 #two {background-color:#f8d788; }
 
 
-
+.test1 {z-index:1; background-color:red; }
 
 
 

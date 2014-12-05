@@ -1,0 +1,168 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {height: 100%; overflow: hidden;}
+
+
+
+
+
+body { 
+  margin:0; padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  font-family: Delius; }
+
+
+.slide { position: relative; padding: 25vh 10%; width: 100vw; 
+box-sizing: border-box; transform-style: inherit;}
+
+
+.slide, .slide:before {
+  background: 2% 2% / cover;  
+} /*THIS CONTROLES PHOTOS*/
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  color: red; } /*THIS IS THE END*/
+  
+  
+.text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
+.photo {background:1%; background-size:10%; height:60%;}
+
+
+
+
+
+/*MINE*/
+h1 {font-family:Delius Unicase; font-weight:bold; padding-top:20px; line-height:1.4em; padding:5%; padding-left:10%; }
+p {font-family:Delius; padding-top:20px; line-height:1.4em; padding:0%; }
+/*MINE*/
+
+/*MINE*/
+#top {background-color:#f8d788; background-attachment: fixed; }
+#one {background-image: url("images/1.png"); background-attachment: fixed; background-color:#f8d788; }
+#un {}
+#two {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; }
+#deux {}
+#three {background-image: url("images/3.png"); background-attachment: fixed; background-color:#f8d788; }
+#trois {}
+#four {background-image: url("images/4.png"); background-attachment: fixed; background-color:#6b6969; font-family:Delius Swash Caps; }
+#quatre {}
+#five {background-image: url("images/5.png"); background-attachment: fixed; background-color:#f9e2a4; }
+#cinq {}
+#six {background-image: url("images/6.png"); background-attachment: fixed; background-color:#91b2d6; }
+#sixx {}
+#seven {background-image: url("images/7.png"); background-attachment: fixed; background-color:#9b476b; color:white; }
+#sept {}
+#eight {background-image: url("images/8.png"); background-attachment: fixed; background-color:#62c9ef; }
+#huit {}
+#nine {background-image: url("images/9.png"); background-attachment: fixed; background-color:#000034; color:white; }
+#neuf {}
+#ten {background-image: url("images/10.png"); background-attachment: fixed; background-color:#CABFB6; }
+#dix {}
+/*MINE*/
+
+
+
+#slide1:before {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-4.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-3.jpg");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-5.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
