@@ -109,7 +109,7 @@ box-sizing: border-box; transform-style: inherit;}
   
   
 .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
-.photo {background:1%; background-size:60%; height:75%; top:0px;}
+.photo {background:40%; background-size:60%; height:75%; top:0px;}
 
 
 
@@ -142,5 +142,16 @@ p {font-family:Delius; padding-top:20px; line-height:1.4em; padding:0%; }
 #dix {}
 /*MINE*/
 
+
+
+
+
+
+
+@media screen and (max-width: 600px)
+  {
+  .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
+  .photo {background:20%; background-size:100%; height:90%; top:0px;}
+  }
 
 
