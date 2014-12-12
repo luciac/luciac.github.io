@@ -155,3 +155,18 @@ p {font-family:Delius; padding-top:20px; line-height:1.4em; padding:0%; }
   }
 
 
+
+
+@media screen and (max-height: 800px)
+  {
+  .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
+  .photo {background:50%; background-size:40%; height:80%; top:0px;}
+  }
+
+
+
+@media screen and (max-height: 800px) (max-width:1110px)
+  {
+  .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
+  .photo {background:40%; background-size:30%; height:70%; top:0px;}
+  }
