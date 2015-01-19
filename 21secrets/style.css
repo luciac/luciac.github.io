@@ -135,14 +135,16 @@ background-attachment: fixed;
 
 #menu2 li a {display:block; }
 #menu2 li ul {display:none; position:relative; }
-#menu2 img {height: 30px; margin-right:7px; }
+#menu2 img {height: 30px; margin-right:7px; margin-bottom:7px; }
 #menu2 li ul li {float:left; }
 
 #menu2 li:hover ul, #menu li.hover ul {
 	display: block;
 	position: absolute;
+	width: 100%; 
 	margin: 0;
-	padding: 0; }
+	padding: 0; 
+	background-color:white; }
 #menu2 li:hover li, #menu li.hover li {top:50px;
 	float: left; }
 #menu2 li:hover li a, #menu li.hover li a {}
