@@ -129,6 +129,10 @@ background-attachment: fixed;
 
 
 
+#menu2 {position: relative; display inline-block; }
+#menu2:before {content: "numbers";} 
+#menu2:focus .numbers {display: block; }
+.numbers {position: absolute; z-index 11; display: none;}
 
 #menu2 li a {display:block; }
 #menu2 li ul {display:none; position:relative; }
