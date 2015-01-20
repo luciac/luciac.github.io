@@ -113,6 +113,7 @@ box-sizing: border-box; transform-style: inherit;}
 .text {padding-left:10%; padding-right:10%; padding-top:5%; padding-bottom:5%; }
 .photo {background:40%; background-size:60%; height:75%; top:0px;}
 
+.endphoto {background:40%; background-size:50%; height:95%; bottom:0px;}
 
 
 
@@ -196,7 +197,8 @@ background-attachment: fixed;
 #vingt {}
 #twentyone {background-image: url("images/21.png"); background-attachment: fixed; background-color:#ffe400; background-repeat: no-repeat; }
 #vingtetun {}
-
+#end {background-image: url("images/gabbanager.png"); background-attachment: fixed; background-color:#3d8f8d; background-repeat: no-repeat; }
+#fin {}
 /*MINE*/
 
 
