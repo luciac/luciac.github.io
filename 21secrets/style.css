@@ -174,18 +174,19 @@ background-attachment: fixed;
 #neuf {}
 #ten {background-image: url("images/10.png"); background-attachment: fixed; background-color:#CABFB6; background-repeat: no-repeat; }
 #dix {}
-
+#eleven {background-image: url("images/11.png"); background-attachment: fixed; background-color:#6a6969; background-repeat: no-repeat; }
+#onze {}
 #twelve {background-image: url("images/12.png"); background-attachment: fixed; background-color:#74d3c2; background-repeat: no-repeat; }
 #douze {}
 #thirteen {background-image: url("images/13.png"); background-attachment: fixed; background-color:#88d49c; background-repeat: no-repeat; }
 #treize {}
 #fourteen {background-image: url("images/14.png"); background-attachment: fixed; background-color:#dfccf0; background-repeat: no-repeat; }
 #quatorze {}
-#fifteen {background-image: url("images/12.png"); background-attachment: fixed; background-color:#78d48b; background-repeat: no-repeat; }
+#fifteen {background-image: url("images/15.png"); background-attachment: fixed; background-color:#edfa5f; background-repeat: no-repeat; }
 #quinze {}
-#sixteen {background-image: url("images/12.png"); background-attachment: fixed; background-color:#78d48b; background-repeat: no-repeat; }
+#sixteen {background-image: url("images/16.png"); background-attachment: fixed; background-color:#f33466; background-repeat: no-repeat; }
 #seize {}
-#seventeen {background-image: url("images/12.png"); background-attachment: fixed; background-color:#78d48b; background-repeat: no-repeat; }
+#seventeen {background-image: url("images/17.png"); background-attachment: fixed; background-color:#9f2c4a; background-repeat: no-repeat; }
 #dixsept {}
 #eighteen {background-image: url("images/18.png"); background-attachment: fixed; background-color:#6a6969; background-repeat: no-repeat; }
 #dixhuit {}
@@ -193,7 +194,7 @@ background-attachment: fixed;
 #dixneuf {}
 #twenty {background-image: url("images/20.png"); background-attachment: fixed; background-color:black; background-repeat: no-repeat; }
 #vingt {}
-#twentyone {background-image: url("images/12.png"); background-attachment: fixed; background-color:#78d48b; background-repeat: no-repeat; }
+#twentyone {background-image: url("images/21.png"); background-attachment: fixed; background-color:#ffe400; background-repeat: no-repeat; }
 #vingtetun {}
 
 /*MINE*/
