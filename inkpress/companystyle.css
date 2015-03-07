@@ -183,18 +183,34 @@ table {
 ul { 
 	font-family:'Open Sans'; }
 	
-nav ul li a { 
+.menulink { 
 	float:left; 
 	margin-top:20px;
 	margin-left:20px;
 	margin-right:20px;
 	padding-bottom:10px;
 	text-decoration:none;
+	position:relative;
 	color:black; }
+
+.menulink:after { 
+	position:absolute;
+	left:0;
+	bottom:-10px;
+	width:0;
+	height:5px;
+	background-color:#ceea2f;
+	content:"";
+	transition:width 0.2s
+	/*border-bottom:3px solid #ceea2f;*/ }
 	
-nav ul li a:hover { 
+.menulink:hover { 
 	color:#ceea2f; 
-	border-bottom:3px solid #ceea2f; }
+	/*border-bottom:3px solid #ceea2f;*/ }
+
+.menulink:hover:after { 
+	width:100%;
+	/*border-bottom:3px solid #ceea2f;*/ }
 
 
 .back {
@@ -205,6 +221,12 @@ nav ul li a:hover {
 	background: linear-gradient(#F8FBF8, white); /* Standard syntax */}
 
 
+
+
+
+
+
+
 /* group one-About */
 
 
@@ -212,24 +234,27 @@ nav ul li a:hover {
     clear:both;
 	z-index:1;
 	position: relative;
-    height:90%; }
+    height:90%; 
+	width:100%; }
 
 #group1 .innards {
 	position: relative;
-    left:5%; 
+    left:5%;
+	max-width:95%; 
 	top:150px;
-	padding-bottom:60px; }
+	padding-top:50px;
+	padding-bottom:20%; }
   
   
   
 #group2 .title {
     position: absolute;
-    left:5%; 
 	top:45px;
 	padding-bottom:60px; }
 
 
 h1 {
+	width:70%;
 	font-family:'Open Sans';
 	font-weight:bold; 
 	font-size:2em;
@@ -262,7 +287,7 @@ h6 {
 	float:left; 
 	width: 40%; 
 	padding-left:5%; 
-	padding-right:5%;}
+	padding-right:10%;}
 	
 	
 
@@ -271,15 +296,20 @@ h6 {
 	
 #group2 {
 	clear:both; 
-	padding-top:60px; }
+	padding-top:60px;
+	 }
 	
-	
+.custimg {
+	width:90%; }
+
 #group2 img {
 	max-height:50px;
+	float:left;
 	padding-right:60px; 
 	padding-bottom:70px; }
 
 #group2 h1 {
+	clear:both;
 	font-family:'Open Sans';
 	font-weight:bold; 
 	font-size:2em;
