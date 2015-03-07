@@ -1,0 +1,376 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.parallax { perspective:1px; height:100vh; overflow-x:hidden; overflow-y:auto; }
+.parallax { perspective-origin-x:100%; }
+.parallax_layer { position:absolute; top:0; right:0; bottom:0; left:0; }
+.parallax_layer { transform-origin-x:100%; }
+.parallax_layer--base { transform:traslateZ(0); }
+.parallax_layer--back { transform:translateZ(-10px); scale(9); }
+.parallax_group { position:relative; height:100vh; transform-style:preserve-3d; transform:translate3d(700px, 0, -800px) rotateY(30deg); }
+
+*/
+
+/* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 100%; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    -webkit-perspective-origin-x: 100%;
+    perspective-origin-x: 100%;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 90%; /* fallback for older browsers */
+    height: 90vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* demo styles
+  --------------------------------------------- */
+
+
+
+   /* centre the content in the parallax layers */
+#group1 .title {
+    position: absolute;
+    left:5%; 
+	top:200px;
+	 }
+  
+  
+  
+ .title {
+    position: absolute;
+    left:5%; 
+	top:45px;
+	 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* style the groups
+  --------------------------------------------- */
+
+  #group1 {
+    z-index: 3; /* slide over group 2 */
+    background: #F8FBF8;
+	display:block;
+  }
+
+
+
+  #group2 {
+    z-index: 5; /* slide under groups 1 and 3 */
+	height:850px;
+  }
+  #group2 .parallax__layer--base {
+    background: white;
+	box-shadow: 0px 10px 5px #F0F0F5; 
+	-webkit-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
+	-moz-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
+	box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
+  }
+
+
+
+  #group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  #group3 .parallax__layer--base {
+    background: rgb(153,216,101);
+  }
+
+
+
+  #group4 {
+    z-index: 2; /* slide under group 3 and 5 */
+  }
+  #group4 .parallax__layer--deep {
+    background: rgb(184,223,101);
+  }
+
+
+
+  #group5 {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+  #group5 .parallax__layer--base {
+    background: rgb(214,229,100);
+  }
+
+
+
+  #group6 {
+    z-index: 2; /* slide under group 5 and 7 */
+  }
+  #group6 .parallax__layer--back {
+    background: rgb(245,235,100);
+  }
+
+  #group7 {
+    z-index: 3; /* slide over group 7 */
+  }
+  #group7 .parallax__layer--base {
+    background: rgb(255,241,100);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+  .navbar {
+    position: fixed;
+    top:0px; left:0px; right:0px;
+	z-index:999;
+    width:100%;
+	background-color:white; 
+	box-shadow: 0px 10px 5px #F0F0F5; 
+	-webkit-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
+	-moz-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
+	box-shadow: 0px 6px 64px -19px rgba(119,125,118,1); }
+
+.logo-spot {
+	margin-top:20px;
+	margin-left:30px;
+	padding-bottom:10px; 
+	padding-left:0px; 
+	position:relative; 
+	float:left; }
+	
+.logo {
+	max-height:70px; }
+	
+.menu { 
+	position:relative; 
+	bottom:-29px; 
+	right:-10%; }
+ul { 
+	font-family:'Open Sans'; }
+	
+nav ul li a { 
+	float:left; 
+	margin-top:20px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:10px;
+	text-decoration:none;
+	color:black; }
+	
+nav ul li a:hover { 
+	color:#ceea2f; 
+	border-bottom:3px solid #ceea2f; }
+
+
+
+/* group one-About */
+
+h1 {
+	clear:both;
+	font-family:'Open Sans';
+	font-weight:bold; 
+	font-size:2em;
+	color:#ff9933;
+	line-height:1.4em; 
+	padding-bottom:30px; }
+
+.about-photos {
+	float:left;
+	width:45%; }
+	
+.about-photos img {
+	width:45%; 
+	padding-top:6px;
+	padding-right:3%; }
+
+
+.firstpar {
+	font-family:'Open Sans'; 
+	line-height:1.75em;}
+.secondpar {
+	font-family:'Open Sans'; 
+	line-height:1.75em; 
+	padding-bottom:1.5em; }
+h6 {
+	font-family:'Open Sans';
+	font-weight:bold; 
+	line-height:1.75em; 
+	padding-bottom:1.5em; }
+	
+.about-info { 
+	float:left; 
+	width: 40%; 
+	padding-left:5%; 
+	padding-right:5%;}
+
+#group2 img {
+	max-height:50px;
+	padding-right:60px; 
+	padding-bottom:70px; }
+
+#group2 h1 {
+	font-family:'Open Sans';
+	font-weight:bold; 
+	font-size:2em;
+	color:#ff9933;
+	line-height:1.4em; 
+	padding-bottom:15px; }
+
+#group2 p {
+	font-family:'Open Sans'; 
+	line-height:1.75em; 
+	padding-bottom:70px; 
+	width:50%; }
+
+
+
+
+
+@media screen and (max-width:300px)
+	
+	
