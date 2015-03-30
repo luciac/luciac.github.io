@@ -61,29 +61,6 @@ table {
 
 
 
-
-
-/*
-
-.parallax { perspective:1px; height:100vh; overflow-x:hidden; overflow-y:auto; }
-.parallax { perspective-origin-x:100%; }
-.parallax_layer { position:absolute; top:0; right:0; bottom:0; left:0; }
-.parallax_layer { transform-origin-x:100%; }
-.parallax_layer--base { transform:traslateZ(0); }
-.parallax_layer--back { transform:translateZ(-10px); scale(9); }
-.parallax_group { position:relative; height:100vh; transform-style:preserve-3d; transform:translate3d(700px, 0, -800px) rotateY(30deg); }
-
-*/
-
-
-
-
-
-
-
-
-
-
   .navbar {
     position: fixed;
     top:0px; left:0px; right:0px;
@@ -177,7 +154,13 @@ ul {
 	box-shadow: 0px 10px 5px #F0F0F5; 
 	-webkit-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
 	-moz-box-shadow: 0px 6px 64px -19px rgba(119,125,118,1);
-	box-shadow: 0px 6px 64px -19px rgba(119,125,118,1); } }
+	box-shadow: 0px 6px 64px -19px rgba(119,125,118,1); } 
+	
+#topbar.open {
+	height:130px; }
+
+.drop-click {
+	height:130px; }
 	
 #topbar a {
 	font-size:1em;
@@ -189,24 +172,25 @@ ul {
 #topbar a:hover {
 	 }
 	 
-#topbar h1 {
+#topbar button {
 	border:1px solid black; 
 	font-size:1em;
 	color:black;
+	background-color:white;
 	font-weight:300;
 	border-radius:10%; 
 	padding:10px;
 	padding-top:4px;
 	padding-bottom:7px;
 	margin:0; 
-	width:50px;
-	height:20px;
+	width:80px;
+	height:40px;
 	float:right;
 	position:relative;
 	right:35%;
 	top:10px; }
 
-#topbar h1:hover {
+#topbar button:hover {
 	border-color:#B9D32A;
 	color:#B9D32A; }
 
@@ -243,8 +227,7 @@ ul {
 	color:#B9D32A;
 	font-weight:bold; }
 
-#topbar:hover {
-	height:130px;}
+
 
 
 
