@@ -169,8 +169,6 @@ ul {
 	text-decoration:none;
 	font-weight:bold; }
 
-#topbar a:hover {
-	 }
 	 
 #topbar button {
 	border:1px solid black; 
@@ -178,7 +176,7 @@ ul {
 	color:black;
 	background-color:white;
 	font-weight:300;
-	border-radius:10%; 
+	border-radius:10px; 
 	padding:10px;
 	padding-top:4px;
 	padding-bottom:7px;
@@ -291,12 +289,13 @@ h1 {
 	padding-right:3%; }
 .firstpar {
 	font-family:'Open Sans'; 
-	line-height:1.75em;}
+	line-height:1.75em;
+	padding-bottom:1.5em; }
 .secondpar {
 	font-family:'Open Sans'; 
 	line-height:1.75em; 
 	padding-bottom:1.5em; }
-h6 {
+span {
 	font-family:'Open Sans';
 	font-weight:bold; 
 	line-height:1.75em; 
@@ -342,7 +341,7 @@ h6 {
 	font-family:'Open Sans'; 
 	line-height:1.75em; 
 	padding-bottom:70px; 
-	width:50%; }
+	width:80%; }
 
 
 
@@ -395,10 +394,10 @@ h6 {
 		display:block; }
 	.about-photos {
 		clear:both;
-		width:75%; }
+		width:95%; }
 	.about-info { 
 		clear:both; 
-		width: 75%; 
+		width: 85%; 
 		padding-top:40px; 
 		padding-right:10%;
 		padding-left:0; }
@@ -406,4 +405,66 @@ h6 {
 		top:50px;
 		padding-top:50px;
 		padding-bottom:20%; }
+	
+	#group2 img {
+	max-height:40px;
+	padding-right:50px; 
+	padding-bottom:60px; }
 		    }
+			
+
+
+@media handheld, screen and (max-width:644px) {
+	.navbar {
+		display:none; }
+		
+	#mobilemenu {
+		display:block; }
+		
+	.about-photos {
+		clear:both;
+		width:95%; }
+	
+	nav .menulink {
+		clear:both; 
+		display:block; }
+		
+	.about-info { 
+		clear:both; 
+		width: 85%; 
+		padding-top:40px; 
+		padding-right:10%;
+		padding-left:0; }
+		
+	#group1 .innards { 
+		top:50px;
+		padding-top:50px;
+		padding-bottom:20%; }
+		    
+	#mobilemenu img {
+		height:55px;
+		left:10%; }
+		
+	#topbar button {
+		border:1px solid black; 
+		font-size:1em;
+		color:black;
+		background-color:white;
+		font-weight:300; 
+		border-radius:10px; 
+		padding:10px;
+		padding-top:4px;
+		padding-bottom:7px;
+		margin:0; 
+		width:80px;
+		height:40px;
+		float:right;
+		position:relative;
+		right:10%;
+		top:10px; }
+	
+	#group2 img {
+		max-height:30px;
+		padding-right:40px; 
+		padding-bottom:50px; }
+	}
