@@ -447,7 +447,12 @@ span {
 		max-height:25px;
 		padding-right:35px; 
 		padding-bottom:45px; }
-		
+	
+	#tophiddenbar li {
+		margin-right:auto;
+		margin-left:auto;
+		text-align:center; }
+			
 	#tophiddenbar a {
 	font-size:.7em;
 	clear:both;
