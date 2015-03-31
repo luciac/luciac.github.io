@@ -122,9 +122,9 @@ p { font-size:1.5em; }
 
 p { font-size:1.5em; 
 	float:right;
-	color: orange; 
+	color: teal; 
 	padding-right:5%;
-	padding-top:10px; }
+	padding-top:40px; }
 
 .languages {
 	width:40%; 
