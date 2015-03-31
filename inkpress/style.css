@@ -113,15 +113,17 @@ p { font-size:1.5em; }
 @media handheld, screen and (max-device-width:600px) and (orientation: landscape) {
 
 .logolarge { float:left; 
-	width:40%; }
+	width:40%; 
+	top:5px; }
 
 .logolarge img { width:100%; 
 	float:left; }
 
 p { font-size:1.5em; 
 	float:right;
-	color: green; 
-	padding-right:5%; }
+	color: blue; 
+	padding-right:5%;
+	top:5px; }
 
 .languages {
 	width:40%; 
@@ -129,8 +131,8 @@ p { font-size:1.5em;
 
 .languages img {
 	max-width:40%;
-	padding-left:0;
-	float:right;
+	padding-left:10px;
+	float:left;
 	margin-left:0;
 	margin-right:0;
 	padding-right:5%; }
