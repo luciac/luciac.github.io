@@ -85,4 +85,16 @@ p {
 
 
 
-@media screen and (max-width:300px)
+@media screen and (max-width:480px) {
+
+.logolarge img {
+		width:70%; }
+p { font-size:1.5em; }
+
+.languages img {
+	max-height:100px;
+	padding:25px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto; }
+}
