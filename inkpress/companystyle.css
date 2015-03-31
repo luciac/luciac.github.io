@@ -431,7 +431,7 @@ span {
 		padding-left:0; }
 		
 	#group1 .innards { 
-		top:50px;
+		top:30px;
 		padding-top:50px;
 		padding-bottom:20%; }
 		    
@@ -470,7 +470,5 @@ span {
 	#topbar.open {
 		height:265px; }
 	
-	#group1 .innards {
-	top:30px; }
 	
 	}
