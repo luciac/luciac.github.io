@@ -470,4 +470,7 @@ span {
 	#topbar.open {
 		height:265px; }
 	
+	#group1 .innards {
+	top:30px; }
+	
 	}
