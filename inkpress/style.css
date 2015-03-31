@@ -112,7 +112,10 @@ p { font-size:1.5em; }
 
 @media handheld, screen and (max-device-width:600px) and (orientation: landscape) {
 
-.logolarge img { width:40%; 
+.logolarge { float:left; 
+	width:40%; }
+
+.logolarge img { width:100%; 
 	float:left; }
 
 p { font-size:1.5em; 
@@ -121,7 +124,8 @@ p { font-size:1.5em;
 	padding-right:5%; }
 
 .languages {
-	width:40%; }
+	width:40%; 
+	float:right; }
 
 .languages img {
 	max-width:40%;
