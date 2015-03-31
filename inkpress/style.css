@@ -114,7 +114,7 @@ p { font-size:1.5em; }
 
 .logolarge { float:left; 
 	width:40%; 
-	top:5px; 
+	margin-top:15%; 
 	padding-left:10px; }
 
 .logolarge img { width:100%; 
