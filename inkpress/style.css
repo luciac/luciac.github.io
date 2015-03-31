@@ -85,6 +85,17 @@ p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media handheld, screen and (max-width:480px) {
 
 .logolarge img {
@@ -105,7 +116,8 @@ p { font-size:1.5em; }
 	float:left; }
 
 p { font-size:1.5em; 
-	float:right; 
+	float:right;
+	color:red; 
 	padding-right:5%; }
 
 .languages {
