@@ -85,7 +85,7 @@ p {
 
 
 
-@media screen and (max-width:480px) {
+@media handheld, screen and (max-width:480px) {
 
 .logolarge img {
 		width:70%; }
@@ -94,6 +94,26 @@ p { font-size:1.5em; }
 .languages img {
 	max-width:40%;
 	padding-left:10%;
+	margin-left:auto;
+	margin-right:auto; }
+}
+
+
+@media handheld, screen and (max-width:480px) and (orientation: landscape) {
+
+.logolarge img { width:40%; 
+	float:left; }
+
+p { font-size:1.5em; 
+	float:right; }
+
+.languages {
+	width:40%; }
+
+.languages img {
+	max-width:40%;
+	padding-left:10%;
+	display:block;
 	margin-left:auto;
 	margin-right:auto; }
 }
