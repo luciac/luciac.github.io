@@ -114,16 +114,17 @@ p { font-size:1.5em; }
 
 .logolarge { float:left; 
 	width:40%; 
-	top:5px; }
+	top:5px; 
+	padding-left:5px; }
 
 .logolarge img { width:100%; 
 	float:left; }
 
 p { font-size:1.5em; 
 	float:right;
-	color: blue; 
+	color: orange; 
 	padding-right:5%;
-	top:5px; }
+	padding-top:10px; }
 
 .languages {
 	width:40%; 

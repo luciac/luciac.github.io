@@ -7,7 +7,3 @@ $(".menubotton").on("click",function(e){
 $(".menubotton").on("click",function(e){
 	$("#topbar").toggleClass("open");
 	});
-	
-$(".menubutton").on("click",function(e){
-	$("#topbar").toggleClass("open");
-	});
