@@ -64,23 +64,84 @@ table {
 
 
 /*body {background-color:black; color:white;}*/
-
+body { overflow-x: hidden; }
 
 /*#navbar {max-width:20px; position:relative; top:0px; padding }*/
 
-#burger li ul {display:none; position:absolute; bottom:100px; background-color:white; }
-#burger li:hover ul {display:block; }
-#burger li {font-family:open sans; font-size:.9em; float:left; 
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeueBold.eot') format('embedded-opentype'),
+         url('BebasNeueBold.woff') format('woff'),
+         url('Bebas Neue-Regular.ttf') format('truetype'),
+         url('BebasNeueBold.ttf') format('truetype'),
+         url('BebasNeueBold.svg') format('svg');
+    font-weight: bold;
+    font-style: bold;  }
+
+
+
+::-webkit-scrollbar { width: 8px; height: 10px; }
+::-webkit-scrollbar-track { background-color: lightgrey; }
+::-webkit-scrollbar-thumb { background-color: rgba(0, 0, 0, 0.2); } 
+/* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-button { background-color: #7c2929; }
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner { background-color: black; } 
+/* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+
+
+
+#burger li ul { position: absolute; width: 0; 
+	-webkit-transition: width 1.5s; /* Safari */
+	transition: width 2s;
+	overflow: hidden; }
+#burger li:hover ul { display: block; width: 250px; }
+/*
+#burger li { font-family:open sans; font-size:.9em; float:left; 
 	display:block; position:relative; 
-	margin-right:auto; margin-left:auto; padding:20px; }
+	margin-right:auto; margin-left:auto; padding:20px; }*/
+#menu a { color: gray; font-size: 25px; text-decoration: none; }
+#menu a:active { color: #e60000; }
+#menu a:hover { color: #e60000; }
+
+nav { height: 100vh;
+	width: 20px;
+	z-index: 20; 
+	position: fixed; }
+
+#menu { height: 100vh; 
+	position: absolute; top: 0; left: 0; 
+	background-color: white;
+	z-index: 10; }
+#menu li { padding-left: 30px;
+	width: 500px; }
+#space { height: 40px; }
+#menu li { font-family: BebasNeue;
+	font-size: 45px;
+	padding-bottom: 15px;
+	padding-left: 40px; }
+
+i.fa { font-size: 25px; 
+	padding-left: 20px; padding-top: 30px; padding-bottom: 50px;
+	z-index: 40; }
+.fa-bars { color: black; }
 
 
- 
-a { text-decoration: none; color: black; 
+
+
+
+
+
+
+
+article a { font-family: helvetica; text-decoration: none; color: black;
+	font-size: 15px;
 	clear: both; }
-p { font-family:helvetica; padding-top:20px; line-height:1.4em;
-	clear: both; }
-h1 { font-family:Bebas Neue; font-weight: bold;
+
+h1 { font-family: BebasNeue; font-weight: bold;
 	color: white;
 	text-align: left; font-size: 7em; 
 	width: 50%;
@@ -88,21 +149,21 @@ h1 { font-family:Bebas Neue; font-weight: bold;
 	position: relative; top: 50%; transform: translateY(-50%);
 	clear: both; }
 
-h2 { font-family:Bebas Neue; font-weight: bold;
+h2 { font-family: BebasNeue; font-weight: bold;
 	color: #e60000;
 	text-align: left; font-size: 7em; 
 	width: 50%;
 	padding-left: 15%; padding-top: 20%;
 	clear: both; }
 
-h3 { font-family:Bebas Neue; font-weight: bold;
+h3 { font-family: BebasNeue; font-weight: bold;
 	color: lightgrey;
 	text-align: left; font-size: 4em; 
 	width: 50%;
 	padding-left: 15%;
-	padding-bottom: 20px; padding-top: 20px;
+	padding-bottom: 20px; padding-top: 60px;
 	clear: both; }
-h4 { font-family:Bebas Neue; font-weight: bold;
+h4 { font-family: BebasNeue; font-weight: bold;
 	color: #e60000;
 	font-size: 2em;
 	width: 50%;
@@ -114,21 +175,24 @@ p { font-family:helvetica; line-height:1.4em;
 	padding-left: 15%; padding-top:20px; padding-bottom: 60px;
 	width: 60%;
 	clear: both; }
-
+/*
  ul { padding-left: 15%; padding-bottom: 60px;
  	clear: both; }
 li { font-family:helvetica; line-height:1.4em;
 	font-size: 13px; color: black;
 	padding-top:5px; padding-bottom: 5px;
 	clear: both; }
-
+*/
 
 article { width:80%; 
 	padding-bottom:10px; padding-right:10%; padding-bottom: 10px; }
 div { margin-left: 15%; margin-right: 15%; padding: 10px; }
-.images { background-color: #f2f2f2; overflow-x: scroll; }
-img { height: 225px; display: inline;
-	padding-right: 20px; padding-bottom: 60px; }
+.images { background-color: #f2f2f2; 
+	width: 100%; height: 300px; 
+	overflow-x: scroll; overflow-y: hidden; 
+	white-space: nowrap; }
+img { height: 225px; display: inline-block;
+	padding-right: 20px; padding-bottom: 0px; }
 
 
 
@@ -137,7 +201,23 @@ img { height: 225px; display: inline;
 	height: 100vh; width: 100vw; }
 #two { padding-bottom: 33vh; }
 
+#three li { padding-left: 15%; padding-bottom: 15px; }
+
 video { padding-left: 15%; }
+
+
+
+
+button { display: block; float: left;
+	margin-left: 15%; margin-top: 30px; margin-bottom: 60px;
+	padding: 25px;
+	border: none;
+	font-family: BebasNeue; font-weight: bold;
+	background-color: #e60000; }
+button a { font-family: BebasNeue; font-weight: bold;
+	font-size: 20px; color: white; padding: 0; }
+
+
 
 	/*
 #four {background-color: white; }
@@ -182,5 +262,10 @@ video { padding-left: 15%; }
 
 
 */
+
+
+
+
+
 
 
