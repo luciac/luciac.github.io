@@ -62,7 +62,7 @@ table {
 
 /*THIS IS WHERE I STARTEEDDDD ABOVE IS COPPIED AND PASTEDDDDD*/
 
-body { width: 100%; }
+body { width: 100vw; }
 #backgr { height: auto; width: auto; min-width: 100%; min-height: 100%;
 	position: fixed; z-index: -99; opacity: .6;}
 #coups { max-width: 100%; }

@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/* Add Styles Here */
+
+body { overflow: hidden; }
+
+
+#banner { font-family: 'Montserrat', sans-serif;
+	font-weight: 200; font-size: 70px;
+	font-style: italic;
+	background-color: yellow; }
+#banner h1 { padding: 60px; max-width: 780px;
+	padding-bottom: 100px;
+	margin-left: auto; margin-right: auto; }
+
+
+#options { background-color: beige;
+	height: 180px; }
+#options .rndbtn { font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	width: 70px; height: 70px; 
+	border-radius: 35px; border: 1px solid;
+	margin:55px 12px;
+	text-align: center;
+	display: inline-block; }
+ #options h2 { position: relative; top: 14px;
+ 	color: yellow; }
+ #options .center { width: 298px;
+ 	margin-right: auto; margin-left: auto; }
+ #options .two { background-color: #9e9e9e; border-color: #9e9e9e; }
+ #options .three { background-color: #676767; border-color: #676767; }
+ #options .four { background-color: #393939; border-color: #393939; }
+
+#randomizer { background-color: lightgreen; 
+	width: 250px; height: 250px;
+	border-radius: 125px;
+	margin: auto; margin-top: 50px; }
+
+#two:hover { background-color: #bdbdbd;
+	transition: all .25s;
+	-webkit-transition: all .25s; }
+#two { transition: all .25s;
+	-webkit-transition: all .25s; }
+#three:hover { background-color: #828282;
+	transition: all .25s;
+	-webkit-transition: all .25s; }
+#three { transition: all .25s;
+	-webkit-transition: all .25s; }
+#four:hover { background-color: #505050;
+	transition: all .25s;
+	-webkit-transition: all .25s; }
+#four { transition: all .25s;
+	-webkit-transition: all .25s; }
+
+
+#randomizer h3 { font-family: 'Montserrat', sans-serif;
+	font-size: 40px; text-align: center; 
+	position: relative; top: 100px;
+	letter-spacing: 1px; }
+.hidden { display: none; }
+.revealed { display: block; }
+
+
+#dacat.flyaway { -webkit-transform-origin: bottom center; -webkit-animation:balloon1 12s ease-in-out;
+	-webkit-animation-fill-mode: forwards; }
+
+@-webkit-keyframes balloon1 {
+	-webkit-animation-name: balloon1;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards;
+	0%{ -webkit-transform:translateY(0) translateX(0) rotate(-6deg);}
+	15%{ -webkit-transform:translateY(-15vh) translateX(90px) rotate(9deg); }
+	30%{ -webkit-transform:translateY(-30vh) translateX(320px) rotate(-8deg); }
+	45%{ -webkit-transform:translateY(-45vh) translateX(190px) rotate(13deg); }
+	60%{ -webkit-transform:translateY(-60vh) translateX(500px) rotate(-8deg); }
+	75%{ -webkit-transform:translateY(-75vh) translateX(450px) rotate(10deg); }
+	90%{ -webkit-transform:translateY(-90vh) translateX(850px) rotate(-8deg); }
+	100%{ -webkit-transform:translateY(-100vh) translateX(670px) rotate(11deg); }
+
+}
+
+
+
+
+
+
+
+
+
+#raining.makeitrain { -webkit-animation:rainin 10s linear infinite; }
+#raining2.makeitrain { -webkit-animation:rainin2 10s linear infinite; -webkit-animation-delay: 5s; }
+@-webkit-keyframes rainin {
+
+	0%{ top: -100vh;}
+	100%{ top: 100vh; }
+}
+@-webkit-keyframes rainin2 {
+
+	0%{ top: -100vh;}
+	100%{ top: 100vh; }
+}
+
+
+#cover.goaway { top: 0; left: 0;
+	-webkit-animation:leave 5s linear;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: 15s; }
+@-webkit-keyframes leave {
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards;
+	0%{ top: 0vh;}
+	100%{ top: 100vh; }
+}
+
+
+/*AHHHAHAHAAAA ITS ALIVEEEEEEEE EXCEPT FOR THE PART WHERE I WAS GOING TO TRIGGER SOUND FUCK THAT SHIT THIS ALREADY TOOK WAYYY TOO LONG
+IT IS THE HOUR IN WHICH I SHOULD ABSOLUTELY BE SLEEPING. 
+IF EVAN READS THIS.... HAPPY BIRTHDAY KID. I HOPE YOU AND YOUR CAT HAVE A FANTASTIC DAY*/
