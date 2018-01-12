@@ -75,6 +75,10 @@ h4 {
 }
 
 
+
+
+/*========= NAV ==========*/
+
 nav {
 	height: 70px;
 }
@@ -136,7 +140,8 @@ nav h1 {
 
 
 
-/* ========= ??? =======*/
+
+/* ========= ITNRO =======*/
 .intro {
 	font-size: 20px; line-height: 24px;
 	text-align: center;
@@ -149,31 +154,40 @@ nav h1 {
 	text-align: center;
 }
 
-/* ========= GREAT CAUSE BANNER s =======*/
-.greatcause {
-	background-color: #ebebeb;
 
+
+
+/* ========= GREAT CAUSE BANNER =======*/
+.cause {
+	background-image: url("camouflage.jpg");
+	margin-bottom: 60px;
+	text-align: center;
 }
-.greatcause p {
-	padding: 15px 140px;
-	font-size: 12px;
+.alignmiddle {
+	vertical-align: middle;
 }
-.help {
-	font-family: 'Roboto Condensed';
-	font-weight: 700;
+.cause img {
+	display: inline-block;
+	height: 175px;
+}
+.cause .text {
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
+}
+.cause h3 {
+	padding-bottom: 16px;
+}
+.cause p {
+	font-size: 18px; line-height: 21px;
 }
 .red {
 	color: #e74c3c;
 	font-weight: bold;
 }
-.greatcause img {
-	background-color: #ebebeb;
-	height: 100px; width: 100px;
-	margin-left: 20px;
-	border-radius: 50%;
-	float: left;
-	position: relative; top: -30px;
-}
+
+
+
 
 
 
@@ -201,8 +215,6 @@ nav h1 {
 	margin-left: auto; margin-right: auto;
 	margin-bottom: 20px;
 }
-
-
 
 svg {
 	display: block;
@@ -274,7 +286,7 @@ polyline {
 
 
 
-
+/*========== Quote ===========*/
 .quote {
 	background-color: #34495e;
 	color: white;
@@ -329,7 +341,7 @@ button {
 
 
 
-
+/*========== FOOTER ===========*/
 footer {
 	clear: both;
 	width: 100%;
@@ -362,6 +374,10 @@ footer img {
 }
 
 
+
+
+/*=========== MEDIA ===========*/
+
 @media (max-width: 850px) {
 	.column {
 		display: block;
@@ -377,6 +393,14 @@ footer img {
 		width: 80vw;
 	}
 }
+
+
+
+
+
+
+
+/*========== RESPONSIVE ===========*/
 @media (max-width: 640px) {
 	.singlebub {
 		width: 70%;
@@ -392,7 +416,21 @@ footer img {
 	textarea {
 		width: 95%;
 	}
+	.alignmiddle {
+		vertical-align: initial;
+	}
+	.cause img {
+		display: block;
+		margin-left: auto; margin-right: auto;
+	}
+	.cause .text {
+		display: block;
+		padding: 0px 60px 30px 60px;
+	}
 }
+
+
+
 @media (max-width: 460px) {
 	input {
 		width: 95%;
