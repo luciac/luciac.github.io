@@ -129,6 +129,7 @@ nav h1 {
 }
 .headercontainer h2 {
 	font-family: 'Roboto', helvetica, sans-serif;
+	font-size: 18px; line-height: 25px;
 	padding-top: 20px;
 }
 .gradientoverlay {
@@ -376,7 +377,11 @@ footer img {
 
 
 
-/*=========== MEDIA ===========*/
+
+
+
+
+/*=========== RSPONSIVE ===========*/
 
 @media (max-width: 850px) {
 	.column {
@@ -395,12 +400,6 @@ footer img {
 }
 
 
-
-
-
-
-
-/*========== RESPONSIVE ===========*/
 @media (max-width: 640px) {
 	.singlebub {
 		width: 70%;
@@ -425,6 +424,7 @@ footer img {
 	}
 	.cause .text {
 		display: block;
+		text-align: center;
 		padding: 0px 60px 30px 60px;
 	}
 }
