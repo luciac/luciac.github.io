@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+
+div, p, span, h1, h2, h3, h4, body {
+	font-family: 'Raleway', sans-serif;
+	box-sizing: border-box;
+	margin: initial;
+	font-size: 12px;
+}
+
+
+.background-thing {
+	background: linear-gradient(120deg, #A5DBDE, #FDC250);
+    background-image: url(images/chevron-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.riddle input {
+  font-size:1.2em;
+  padding:.8em .8em .8em .3em;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom: 2px solid #757575;
+}
+
+.riddle input {
+	outline: none;
+}
+
+.center {
+	margin: 0 auto;
+	position relative;
+}
+
+#hero {
+	padding-top: 7em;
+}
+
+#hero-card {
+	padding: 40px;
+	background-color: #ffffff;
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+#hero-card .progress {
+	font-weight: 400;
+	font-size: 2em;
+	color: #A5DBDE;
+	vertical-align: top;
+	padding-top: 5px;
+	display: inline-block;
+	margin-right: 45px;	
+}
+
+#hero-card h1 {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 1.6em;
+	color: #00A98F;
+	vertical-align: top;
+	margin-bottom: 2em;
+}
+
+#hero-card h1 span{
+	font-size: 1.8em;
+}
+
+#hero-card .hero-cta p{
+	color: #FCB736;
+	font-size: 1.8em;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+#riddle-content {
+	width: 85%;
+	margin-top: 7%;
+}
+
+#riddle-content .riddle{
+	color: #333333;	
+	font-weight: 700;
+	font-size: .9em;
+    margin-bottom: 10%;	
+}
+
+#riddle-content .riddle.valid{
+	color: #00A98F;	
+}
+
+#riddle-content .isvalid-img{
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: #E6E6E6;
+	margin-right: 3%;
+	position: relative;
+	background-size: 35px 35px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+#riddle-content .isvalid-img.valid{
+	background-color: #A5DBDE;
+	background-image: url('images/white-line-check.png');
+}
+
+#riddle-content .isvalid-img.invalid{
+	background-color: #DDA6B3;
+	background-image: url('images/white-x-wrong.png');
+}
+
+#riddle-content .riddle-box, #riddle-content .isvalid-img{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#riddle-content .question{
+	font-weight: 400;
+	font-size: 1.8em;
+    width: 82%;
+    margin-bottom: 7%;
+
+}
+#riddle-content input{
+
+}
+
+#riddle-content .riddle-box{
+	width: 70%;
+}
+
+.riddle-box.focus {
+	color: #00A98F;
+}
+
+.riddle-box.focus input {
+	color: #00A98F;
+	border-bottom: 2px solid #00A98F;
+}
+
+
+#clue-button {
+	appearance: none;
+	margin: 10pt auto;
+	text-align: center;
+	height: 41px;
+    line-height: 41px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #00A98F;
+    color: #FFFFFF;
+    width: 109px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border: none;
+    font-size: 17px;
+    line-height: 42px;
+}
+
+#clue-button:hover {
+	opacity: .7;
+}
+
+#clue-button:focus {
+	outline: none;
+}
+
+#clue-button:disabled {
+	background-color: #B2B2B2;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-wrapper {
+    background-image: url(images/chevron-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    width: 50%; 
+}
+
+#next-clue {
+	font-weight: 700;
+	font-size: 1.6em;
+    color: #e8a528;
+}
+
+.modal-content {
+	position: relative;
+	padding: 20%;
+	background-color: #ffffff;
+}
+
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    line-height: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+
+	div, p, span, h1, h2, h3, h4, body {
+		font-size: 9px;
+	}
+
+	#hero-card {
+		padding: 35px 35px 15px 35px;
+		position: relative;
+	}
+	
+	.modal-wrapper {
+		width: 80%;
+	}
+	.modal-content {
+		padding: 15%;
+	}
+
+	#next-clue {
+		font-weight: 400;
+		font-size: 1.5em;
+		line-height: 1.4em;
+	}
+
+	#hero-card .progress {
+		font-size: 1.5em;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    margin: initial;
+	    padding: 8px;
+	}
+
+	#riddle-content .isvalid-img{
+		width: 40px;
+		height: 40px;
+
+		background-size: 20px 20px;
+	}
+
+
+}
