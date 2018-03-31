@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Easter Scavenger Hunt</title>
+		<meta name="description" content="Scavenger hunt">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta name="viewport" content="width=320, initial-scale=1"> -->
+		<meta name="keywords" content="Scavenger hunt">
+		<link rel="stylesheet" href="riddles.css">		
+		<script type="text/javascript" src="riddles.js" defer></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="hero" class="background-thing">
+			<div id="hero-card" class="center">
+				<div class="hero-top">
+					<span class="progress">3/5</span>
+					<h1>FROM THE DESK OF<br>
+						<span>The Easter Bunny Jr.</span>
+					</h1>
+				</div>
+				<div class="hero-cta">
+					<p>Responde a 4 de las 5 preguntas<br> correctamente<p>
+				</div>
+			</div>
+		</div>
+		<!-- end hero -->
+		<div id="riddle-content" class="center">
+			<div id="r1" class="riddle">
+				<div class ="isvalid-img"></div>
+				<div class="riddle-box">
+					<p class="question"> I’m tall when I’m young and I’m short when I’m old. What am I?</p>
+					<input id="a1" placeholder="Respuesta">
+				</div>
+				
+			</div>
+			<div id="r2" class="riddle">
+				<div class ="isvalid-img"></div>
+				<div class="riddle-box">
+					<p class="question">Si lo escribes como es, soy de la selva el rey.	Si lo escribes al revés soy tu Papá Noel.
+					</p>
+					<input id="a2" placeholder="Respuesta">
+				</div>
+			</div>
+			<div id="r3" class="riddle">
+				<div class ="isvalid-img"></div>
+				<div class="riddle-box">
+					<p class="question">Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.
+					</p>
+					<input id="a3" placeholder="Respuesta">
+				</div>
+			</div>
+			<div id="r4" class="riddle">
+				<div class ="isvalid-img"></div>
+				<div class="riddle-box">
+					<p class="question">If two’s company and three’s a crowd, what are four and five?</p>
+					<input id="a4" placeholder="Respuesta">
+				</div>
+			</div>
+			<div id="r5" class="riddle">
+				<div class ="isvalid-img"></div>
+				<div class="riddle-box">
+					<p class="question">If there are four apples and you take away three, how many do you have?</p>
+					<input id="a5" placeholder="Respuesta">
+				</div>	
+			</div>
+		</div>
+		<!-- end #riddle-content -->
+
+
+		<button id="clue-button" >Open Clue</button>
+
+		<!-- The Modal -->
+		<div id="easter-modal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-wrapper">
+		  	<div class="modal-content">
+			    <span class="close">&times;</span>
+			    <p id="next-clue">What is the next clue</p>
+		  	</div>
+		  </div>
+
+		</div>
+	</body>
+</html>
