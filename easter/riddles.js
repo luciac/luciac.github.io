@@ -4,7 +4,7 @@ $(function(){
 	var modal, btn, span;
 
 	// check if they have already completed the quiz
-	$(window).onload(function(){
+	$(window).load(function(){
 		bindElems();
 		if (getCookie('easterQuiz2018Passed')) {
 		displayModal();
