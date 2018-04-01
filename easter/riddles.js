@@ -4,12 +4,11 @@ $(function(){
 	var modal, btn, span;
 
 	// check if they have already completed the quiz
-	$(window).load(function(){
-		bindElems();
-		if (getCookie('easterQuiz2018Passed')) {
+	
+	bindElems();
+	if (getCookie('easterQuiz2018Passed')) {
 		displayModal();
-		}
-	});
+	}
 
 	function bindElems(){
 		modal = $('#easter-modal')[0];
