@@ -1,17 +1,22 @@
 
 $(function(){
 
+	var modal, btn, span;
+
 	// check if they have already completed the quiz
 	$(window).onload(function(){
+		bindElems();
 		if (getCookie('easterQuiz2018Passed')) {
-		    displayModal();
+		displayModal();
 		}
 	});
 
+	function bindElems(){
+		modal = $('#easter-modal')[0];
+		btn = $("#clue-button")[0];
+		span = $(".close")[0];
+	}
 
-	var modal = $('#easter-modal')[0];
-	var btn = $("#clue-button")[0];
-	var span = $(".close")[0];
 	var answers = {
 		a1: { 
 			valid : false,
