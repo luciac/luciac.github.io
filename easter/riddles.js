@@ -1,4 +1,3 @@
-
 $(function(){
 
 	var modal, btn, span;
@@ -27,7 +26,7 @@ $(function(){
 		},
 		a3: { 
 			valid : false,
-			options : ['pera'],
+			options : ['pera', 'es pera', 'una pera', 'peras'],
 		},
 		a4: { 
 			valid : false,
@@ -123,4 +122,3 @@ $(function(){
 	}
 
 });
-
