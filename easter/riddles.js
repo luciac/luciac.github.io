@@ -4,13 +4,11 @@ $(function(){
 	var modal, btn, span;
 
 	// check if they have already completed the quiz
-	$(window).onload(function(){
-		bindElems();
-		if (getCookie('easterQuiz2018Passed')) {
-			$("#clue-button")[0].disabled = false;
-			displayModal();
-		}
-	});
+	bindElems();
+	if (getCookie('easterQuiz2018Passed')) {
+		$("#clue-button")[0].disabled = false;
+		displayModal();
+	}
 
 	function bindElems(){
 		modal = $('#easter-modal')[0];
