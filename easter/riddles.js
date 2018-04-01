@@ -2,9 +2,12 @@
 $(function(){
 
 	// check if they have already completed the quiz
-	if (getCookie('easterQuiz2018Passed')) {
-		displayModal();
-	}
+	$(window).onload(function(){
+		if (getCookie('easterQuiz2018Passed')) {
+		    displayModal();
+		}
+	});
+
 
 	var modal = $('#easter-modal')[0];
 	var btn = $("#clue-button")[0];
@@ -41,13 +44,12 @@ $(function(){
 
 		var id = $(this).attr('id');
 		var answerOptions = answers[id].options;
-		var answer = $(this).val();
+		var answer = $(this).val().toLowerCase();
 		var isValid = checkAnswer(answer, answerOptions, this);
 
 		answers[id].valid = isValid;
 		if (isQuizValid()){
 			$("#clue-button")[0].disabled = false;
-			console.log(modal);
 			displayModal();
 			setCookie('easterQuiz2018Passed', true, 7);
 		} 
