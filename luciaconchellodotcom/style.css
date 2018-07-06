@@ -1,0 +1,943 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+
+
+
+/*
+body {
+	font-family: 'Roboto', helvetica, sans-serif;
+	max-width: 1080px; margin-right: auto; margin-left: auto;
+}
+*/
+
+
+
+
+/*----------------------------------------------------
+                   UNIVERSAL RANDOMS
+----------------------------------------------------*/
+body {
+	font-family: 'Raleway', sans-serif; font-weight: 200;
+}
+.bold {
+	font-weight: 700;
+}
+.grey {
+	color: #aaaaaa;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------
+                    THE HOME PAGE
+----------------------------------------------------*/
+#loadinglogo {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 70vw;
+	max-width: 680px;
+	margin-left: auto; margin-right: auto;
+	margin-top: 35vh; margin-bottom: 30px;
+}
+.logoback {
+	position: relative;
+	top: 10px;
+	left: 15%;
+	width: 70%;
+	opacity: 0;
+	margin-left: auto; margin-right: auto;
+	-webkit-transition: all 1.5s ease-out;
+  	-moz-transition: all 1.5s ease-out;
+  	-o-transition: all 1.5s ease-out;
+  	-ms-transition: all 1.5s ease-out;
+  	transition: all 1.5s ease-out;
+}
+.logofront {
+	position: absolute;
+	top: 10px;
+	left: 15%;
+	width: 70%;
+	opacity: 0;
+	margin-left: auto; margin-right: auto;
+	-webkit-transition: 1.25s all .5s ease-out;
+  	-moz-transition: 1.25s all .5s ease-out;
+  	-o-transition: 1.25s all .5s ease-out;
+  	-ms-transition: 1.25s all .5s ease-out;
+  	transition: 1.25s all .5s ease-out;
+}
+/*--theanimation--*/
+.logoback.load {
+	opacity: 1;
+	width: 100%;
+	left: 0; top: 0;
+}
+.logofront.load {
+	opacity: 1;
+	width: 100%;
+	left: 0; top: 0;
+}
+/*--thenav--*/
+#home {
+	width: 235px;
+	margin-left: auto; margin-right: auto;
+	opacity: 0;
+	-webkit-transition: .5s opacity 2.25s ease-out;
+  	-moz-transition: .5s opacity 2.25s ease-out;
+  	-o-transition: .5s opacity 2.25s ease-out;
+  	-ms-transition: .5s opacity 2.25s ease-out;
+  	transition: .5s opacity 2.25s ease-out;
+}
+#home.load {
+	opacity: 1;
+}
+#home h1 {
+	font-size: 16px;
+	padding: 6px; margin-left: 20px;
+}
+#home h2 {
+	font-size: 13px;
+	padding: 4px;
+	margin-left: 40px;
+}
+#home a {
+	color: #ea2933;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+                       NAVIGATION
+------------------------------------------------------
+----------------------------------------------------*/
+
+#sidenav { width: 250px; height: 100vh;
+	background: #ffffff;
+	display: inline-block;
+	margin: 0; padding: 0;
+	vertical-align:top;
+	position: fixed;
+	transition: transform .75s ease-out;
+	transform: translateX(-250px);
+	overflow-y:scroll;
+}
+
+#sidenavscrollable {
+	overflow-y: scroll;
+	position: absolute;
+	padding-top: 104px;
+	width: 100%; height: fit-content;
+}
+
+
+#bodycontainer {
+	display: inline-block; 
+	margin: 0; padding: 0px 17px 20px 17px; 
+	margin-left: 0px;
+	transition: margin-left .75s ease-out;
+	margin-bottom: 160px;
+	margin-top: 80px;
+	transition: padding .25s ease-out;
+}
+#mobilenav {
+	display: block; 
+	width: 100vw;
+	position: fixed;
+	top: 0px; left: 0px;
+	background: linear-gradient(rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 0.95));
+	text-align: center;
+}
+#mobilenav .logo {
+	width: 182px; height: 44px;
+	padding-top: 34px;
+	padding-bottom: 24px;
+}
+#sidenav img {
+	padding: 20px; width: 182px; height: 44px;
+}
+#sidenav .mobile {
+	display: none;
+}
+#sidenav h1 {
+	font-size: 16px;
+	padding: 6px; margin-left: 20px;
+}
+#sidenav h2 {
+	font-size: 13px;
+	padding: 4px;
+	margin-left: 40px;
+}
+#sidenav a {
+	color: #ea2933;
+	text-decoration: none;
+	font-weight: 200;
+}
+/*--animation--*/
+#sidenav.slidein { 
+	transition: transform .75s ease-out;
+	transform: translateX(0px);
+}
+#burger {
+	position: fixed; z-index: 99;
+	display: block;
+	transition: left .73s ease-out .1s;
+}
+.burger {
+	transition: left .74s ease-out .1s;
+	margin-top: 43px;
+	position: absolute;
+	left: 27px;
+}
+.burger div {
+	height: 1px;
+	width: 40px;
+	margin-bottom: 10px;
+	background-color: #ea2933;
+}
+/* ============ MOBILE MENU ============== */
+#greymodal {
+	display: none;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: #000000;
+	opacity: 0;
+	transition: opacity .75s ease-out 2s;
+}
+#greymodal.on{
+	display: block;
+	opacity: .4;
+	z-index: 1;
+	transition: opacity .75s ease-out 2s;
+}
+#sidenav.forward {
+	z-index: 5;
+}
+#burger.red {
+	z-index: 10;
+	transition: left .75s ease-out .1s;
+	left: 180px;
+}
+#burger .bar.one {
+	position: relative;
+	top: 0px;
+	transform: rotate(0deg);
+	transition: all .75s;
+}
+#burger .bar.two {
+	position: relative;
+	top: 0px;
+	transform: rotate(0deg);
+	transition: all .75s;
+}
+#burger .bar.three {
+	position: relative;
+	top: 0px;
+	transform: rotate(0deg);
+	transition: all .75s;
+}
+/*--responsive--*/ 
+#burger .bar.one.close {
+	position: relative;
+	top: 15px;
+	transform: rotate(45deg);
+	transition: all .5s;
+}
+#burger .bar.two.close {
+	position: relative;
+	top: 4px;
+	transform: rotate(45deg);
+	transition: all .5s;
+}
+#burger .bar.three.close {
+	position: relative;
+	top: -7px;
+	transform: rotate(-45deg);
+	transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+                DESIGN PROJECT UNIVERSALS
+------------------------------------------------------
+----------------------------------------------------*/
+.project h1 {
+	font-size: 20px;
+	letter-spacing: 11px;
+	color: #ea2933;
+	padding: 54px 12px 38px 12px;
+	clear: both;
+}
+.project h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ea2933;
+    padding: 36px 12px 10px 12px;
+    clear: both;
+}
+.project p {
+    font-size: 15px;
+    line-height: 19px;
+    padding: 0px 12px;
+    clear: both;
+}
+.project .header {
+
+}
+.project .test {
+	background-color: red;
+	padding: 10px;
+}
+header {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.header img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/*----------------------------------------------------
+                       MAYBE UNIVERSAL-MAYBE PROJECT ONLY????
+                       AT LEAST: 1950, WAYNE,
+----------------------------------------------------*/
+img.half {
+    width: 100%;
+}
+img.left {
+    float: left;
+    padding-right: 5px;
+}
+img.right {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+                        ABOUT ME
+----------------------------------------------------*/
+.abouttext {
+	width: 100%; 
+	//background: lightgreen;
+	display: inline-block;
+	margin: 0; padding: 0;
+	vertical-align:top;
+}
+.abouttext .text {
+	//background: lime;
+	display: inline-block;
+	padding-right: 10px
+}
+.abouttext .text h1 {
+	color: #ea2933;
+	font-size: 20px;
+	letter-spacing: 10px;
+	padding-bottom: 32px;
+}
+.abouttext .text p {
+	font-size: 15px; line-height: 19px;
+}
+
+/*.image.about {
+	width: 50%;
+	display: inline-block;
+	margin: 0; padding: 0;
+	vertical-align:top;
+}*/
+.image.about.top {
+	width: 100%;
+	display: block;
+	margin: 0; padding: 0;
+	vertical-align:top;
+}
+.image.about.side {
+	display: none;
+}
+.about img {
+	width: 100%;
+}
+hr {
+	margin-top: 80px;
+	margin-bottom: 70px;
+	height: 1px;
+	border-width: 1px;
+	margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-color: #cccccc;
+    box-shadow: none;
+    border-top: none; border-left: none; border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------
+                       1950s
+----------------------------------------------------*/
+.nationscreens {
+    width: 100%;
+}
+.nationscreens img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.nationscreens img:nth-child(1) {
+    padding-top: 30px;
+}
+.nationscreens img:nth-child(2) {
+    padding-top: 0px;
+}
+
+
+
+
+/*----------------------------------------------------
+                   WAYNE ENTERPRISES
+----------------------------------------------------*/
+.waynelogo {
+	width: 100%;
+	padding-right: 0%;
+	display: block;
+	padding-bottom: 30px;
+	vertical-align: top;
+}
+.waynelogo p {
+	font-size: 14px;
+}
+.waynelogo:nth-child(4) {
+	padding-right: 0;
+}
+.waynelogo:nth-child(2) {
+	padding-right: 0;
+}
+.waynelogo img {
+	display: block;
+	margin-left: auto; margin-right: auto;
+	width: 100%;
+	max-width: 120px;
+	padding-bottom: 15px;
+}
+.onecolumnimage {
+    width: 100%;
+}
+.onecolumnimage img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.onecolumnimage img:nth-child(1) {
+    padding-top: 30px;
+}
+.onecolumnimage.waynebook {
+	text-align: center;
+}
+.onecolumnimage.waynebook img {
+	width: 50%; 
+	min-width: 275px;
+}
+.subbrands {
+	text-align: center;
+	padding-top: 30px;
+	width: 100%;
+	margin-left: 0; margin-right: 0;
+}
+.subbrands img {
+	height: 120px;
+	padding: 0px 10px 20px 10px;
+}
+
+
+
+
+/*----------------------------------------------------
+                         CERA
+----------------------------------------------------*/
+.header .retrodanger {
+	background-image: url("images/Header-bg-01.png");
+	background-size: 100%; 
+}
+/*--THREE TOUCHPOINTS--*/
+.touchpoints {
+    width: 100%;
+    padding-top: 30px;
+}
+.touchpoints .touchpoint {
+	width: 100%; height: 175px;
+	margin-bottom: 7px;
+	display: block;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.touchpoint:nth-child(1) {
+	background-image: url(images/touchpoint-01.jpg);
+}
+.touchpoint:nth-child(2) {
+	background-image: url(images/touchpoint-02.jpg);
+}
+.touchpoint:nth-child(3) {
+	background-image: url(images/touchpoint-03.jpg);
+}
+/*--THE STATS--*/
+.cerafacts {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.percentages {
+	padding: 30px 70px;
+}
+.cerafacts p {
+	padding-top: 5px;
+	color: #ea2933;
+	font-size: 20px;
+	line-height: 25px;
+}
+.cerafacts img {
+	width: 160px;
+	height: 160px;
+}
+
+/*--SCREENSHOTS--*/
+.cerascreenshots {
+	width: 100%;
+}
+.cerascreenshots img {
+	display: inline-block;
+	padding: 30px 0px 15px 0px;
+
+}
+.cerascreenshots img:nth-child(1) {
+	width: 75%;
+	float: left;
+}
+.cerascreenshots img:nth-child(2) {
+	width: 21%;
+	float: right;
+}
+/*--HANDBOOK--*/
+.handbook {
+    width: 100%;
+    padding-top: 30px;
+}
+.main {
+	height: 321px;
+	margin-bottom: 30px;
+}
+.main:nth-child(1) {
+    width: 100%;
+    float: left;
+    background-image: url(images/handbook-01.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+.main:nth-child(2) {
+	display: none;
+	width: 33%;
+	float: right;
+	background-image: url(images/handbook-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*====================================================
+------------------------------------------------------
+---------------------MEDIA QUERIES--------------------
+------------------------------------------------------
+====================================================*/
+
+@media only screen and (min-width: 500px) {
+	/*--ABOUT--*/
+	#bodycontainer.about {
+		padding: 100px 77px 20px 77px;
+	}
+	/*--WAYNE--*/
+	.waynelogo {
+		width: 45%;
+		padding-right: 4%;
+		display: inline-block;
+		padding-bottom: 30px;
+		vertical-align: top;
+	}
+	.waynelogo p {
+		font-size: 14px;
+	}
+	.waynelogo img {
+		display: block;
+		margin-left: auto; margin-right: auto;
+		width: 100%;
+		max-width: 160px;
+		padding-bottom: 15px;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 525px) {
+	
+	/*--1950S--*//*--..............WAIT WAHT?ITS IN 525 AAAAND 650? FO THE SAME ONE?*/
+	img.half {
+	    width: 49.25%;
+	}
+	img.left {
+	    float: left;
+	    padding-right: 5px;
+	}
+	img.right {
+	    float: right;
+	}
+	.nationscreens img:nth-child(2) {
+	    padding-top: 30px;
+	}
+}
+
+
+@media only screen and (min-width: 650px) {
+	/*--UNIVERSALS--*/
+	#bodycontainer {
+		padding: 00px 77px 20px 77px; 
+		transition: padding .25s ease-out;
+	}
+	.burger {
+		left: 88px;
+		transition: left .25s ease-out;
+	}
+	/*--1950S--*/
+	img.half {
+	    width: 49.25%;
+	}
+	img.left {
+	    float: left;
+	    padding-right: 5px;
+	}
+	img.right {
+	    float: right;
+	}
+	/*---CERA-TOUCHPOINTS--*/
+	.touchpoints .touchpoint {
+		width: 32%; height: 321px;
+		margin: 0; padding: 0;
+		margin-right: 1.15%;
+		display: inline-block;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.touchpoint:nth-child(3) {
+		margin-right: 0;
+	}
+	/*--CERA-STATS--*/
+	.percentages {
+		width: 31%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 30px 0px;
+	}
+	.cerafacts img {
+		max-width: 130px;
+		max-height: 130px;
+	}
+	/*--CERA-HANDBOOK--*/
+	.main:nth-child(1) {
+	    width: 65%;
+	}
+	.main:nth-child(2) {
+		display: inline-block;
+	}
+}
+
+
+
+@media only screen and (min-width: 675px) {
+	/*--ABOUT--*/
+	.image.about.top {
+		display: none;
+	}
+	.image.about.side {
+		width: 50%;
+		max-width: 575px;
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align:top;
+	}
+	.abouttext {
+		width: 49%; 
+		max-width: 404px;
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align:top;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 800px) {
+	/*--UNIVERSALS--*/
+	#bodycontainer {
+		padding: 60px 77px 20px 77px; 
+		margin-left: 250px;
+		margin-top: 0px;
+		transition: margin-left .75s ease-out;
+	}
+
+	#sidenav { width: 250px; height: 100vh;
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align:top;
+		position: fixed;
+		transition: transform .75s ease-out;
+		transform: translateX(0px);
+	}
+	#sidenavscrollable {
+		padding-top: 0px;
+	}
+	#greymodal {
+		display: none;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		background-color: #000000;
+		opacity: 0;
+		transition: opacity .75s ease-out 2s;
+	}
+	#greymodal.on{
+		display: none;
+		opacity: 0;
+		z-index: 0;
+		transition: opacity .75s ease-out 2s;
+	}
+	#sidenav .mobile {
+		display: block;
+	}
+	#mobilenav {
+		display: none;
+	}
+	#burger {
+		display: none;
+	}
+	#sidenav img {
+		padding: 20px; width: 182px; height: 44px;
+	}
+	.project h1 {
+		padding: 36px 12px;
+	}
+	/*--ABOUT--*/
+	#bodycontainer.about {
+		margin-left: 250px;
+		margin-top: 0px;
+		transition: margin-left 1s ease-out;
+	}
+	/*--CERA--*/
+	.cerafacts img {
+		width: 100px;
+		height: 100px;
+		transition: width .25s ease-out, height .2s ease-out;
+	}
+	.cerafacts p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 927px) {
+	/*--ABOUT--*/
+	.image.about.top {
+		display: none;
+	}
+	.image.about.side {
+		width: 50%;
+		max-width: 575px;
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align:top;
+	}
+	.abouttext {
+		width: 49%; 
+		max-width: 404px;
+		display: inline-block;
+		margin: 0; padding: 0;
+		vertical-align:top;
+	}
+}
+
+
+@media only screen and (min-width: 1000px) {
+	/*--CERA--*/
+	.cerafacts p {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.cerafacts img {
+		width: 130px;
+		height: 130px;
+		transition: width .25s ease-out, height .2s ease-out;
+	}
+}
+
+
+@media only screen and (min-width: 1030px) {
+	/*--WAYNE--*/
+	.subbrands {
+		width: 80%;
+		margin-left: auto; margin-right: auto;
+	}
+}
+
+
+
+@media only screen and (min-width: 1100px) {
+	/*--WAYNE--*/
+	.waynelogo {
+		width: 22%;
+		padding-right: 3.5%;
+		display: inline-block;
+	}
+	.waynelogo:nth-child(2) {
+		padding-right: 3.5%;
+	}
+	.waynelogo:nth-child(4) {
+	    padding-right: 0;
+	}
+	.waynelogo img {
+		width: 100%;
+		padding-bottom: 15px;
+	}
+}
+
+
+@media only screen and (min-width: 1190px) {
+	/*--WAYNE--*/
+	.subbrands {
+		width: 100%;
+		margin-left: 0; margin-right: 0;
+	}
+}
