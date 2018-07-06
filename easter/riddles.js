@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $(function(){
 
@@ -9,6 +10,25 @@ $(function(){
 	var modal = $('#easter-modal')[0];
 	var btn = $("#clue-button")[0];
 	var span = $(".close")[0];
+=======
+$(function(){
+
+	var modal, btn, span;
+
+	// check if they have already completed the quiz
+	bindElems();
+	if (getCookie('easterQuiz2018Passed')) {
+		$("#clue-button")[0].disabled = false;
+		displayModal();
+	}
+
+	function bindElems(){
+		modal = $('#easter-modal')[0];
+		btn = $("#clue-button")[0];
+		span = $(".close")[0];
+	}
+
+>>>>>>> origin/master
 	var answers = {
 		a1: { 
 			valid : false,
@@ -20,7 +40,11 @@ $(function(){
 		},
 		a3: { 
 			valid : false,
+<<<<<<< HEAD
 			options : ['pera'],
+=======
+			options : ['pera', 'es pera', 'una pera', 'peras'],
+>>>>>>> origin/master
 		},
 		a4: { 
 			valid : false,
@@ -41,13 +65,20 @@ $(function(){
 
 		var id = $(this).attr('id');
 		var answerOptions = answers[id].options;
+<<<<<<< HEAD
 		var answer = $(this).val();
+=======
+		var answer = $(this).val().toLowerCase();
+>>>>>>> origin/master
 		var isValid = checkAnswer(answer, answerOptions, this);
 
 		answers[id].valid = isValid;
 		if (isQuizValid()){
 			$("#clue-button")[0].disabled = false;
+<<<<<<< HEAD
 			console.log(modal);
+=======
+>>>>>>> origin/master
 			displayModal();
 			setCookie('easterQuiz2018Passed', true, 7);
 		} 
@@ -117,4 +148,7 @@ $(function(){
 	}
 
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master

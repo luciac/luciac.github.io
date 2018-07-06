@@ -67,6 +67,10 @@ div, p, span, h1, h2, h3, h4, body {
 }
 
 #hero-card h1 span{
+<<<<<<< HEAD
+=======
+	font-weight: 900;
+>>>>>>> origin/master
 	font-size: 1.8em;
 }
 

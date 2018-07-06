@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pufferfish</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Istok+Web%7CHomemade+Apple' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i" rel="stylesheet">
+</head>
+<body>
+
+<div id="banner">
+	<h1>oh the places we'll go</h1>
+</div>
+
+<div id="body">
+	<div id="options">
+		<div class="center">
+			<div id="two" class="rndbtn two"><h2>2</h2></div>
+			<div id="three" class="rndbtn three"><h2>3</h2></div>
+			<div id="four" class="rndbtn four"><h2>4</h2></div>
+		</div>
+	</div>
+	<div id="randomizer" class="still">
+		<h3 id"left" class="hidden">left</h3>
+		<h3 id="right" class="hidden">right</h3>
+		<h3 id="un" class="hidden">1</h3>
+		<h3 id="deux" class="hidden">2</h3>
+		<h3 id="trois" class="hidden">3</h3>
+		<h3 id="quatre" class="hidden">4</h3>
+	</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.1.3.js'></script>
+<script src='http://cykod.github.io/ScrollFlight/scroll_flight.js'></script>
+<script src="brotatochip.js"></script>
+
+
+
+
+	
+</body>
+</html>

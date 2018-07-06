@@ -1,0 +1,438 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+
+
+
+
+body {
+	font-family: 'Roboto', helvetica, sans-serif;
+	max-width: 1180px; margin-right: auto; margin-left: auto;
+}
+
+h3 {
+	font-family: 'Roboto Condensed'; font-weight: 700;
+	font-size: 26px;
+}
+p {
+	font-size: 14px; line-height: 18px;
+}
+h4 {
+	font-family: 'Roboto Condensed'; font-weight: 700;
+	padding: 15px 0px;
+}
+
+
+
+
+/*========= NAV ==========*/
+
+nav {
+	height: 70px;
+}
+nav img {
+	height:42px; width: 85px;
+	padding: 12px;
+	display: inline-block;
+}
+nav .navtitle {
+	width: auto;
+	display: inline-block;
+	vertical-align: top; 
+}
+nav h1 {
+	height: 70px; line-height: 70px;
+	font-family: 'Roboto Condensed', helvetica, sans-serif; font-weight: 700;
+	font-size: 20px;
+	color: #b00b09;
+	
+}
+
+
+
+
+/* ========= HERO =========*/
+.headercontainer {
+	background-image: url("Unknown.png");
+	height: 500px;
+	background-size: 1280px 533px;
+	background-position: top center;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	clear: both;
+}
+.headercontainer .gradient {
+	width: 100%; height: 100%;
+	background: linear-gradient(rgba(0,28,78,0), rgba(0,28,78,.2));
+}
+.headercontainer .text {
+	position: relative; top: 50%;
+	transform: translateY(-50%);
+}
+.headercontainer h1 {
+	font-family: 'Roboto Condensed', helvetica, sans-serif;
+	font-weight: 700; font-size: 70px;
+	padding: 0px 20px 0px 20px;
+}
+.headercontainer h2 {
+	font-family: 'Roboto', helvetica, sans-serif;
+	font-size: 18px; line-height: 25px;
+	padding-top: 20px;
+}
+.gradientoverlay {
+	width: 100%; height: 100%; 
+	background-color: #001c4e;
+	position: relative; top:0px;
+	z-index: 1; opacity: .7;
+}
+
+
+
+
+/* ========= ITNRO =======*/
+.intro {
+	font-size: 20px; line-height: 24px;
+	text-align: center;
+	margin-left: auto; margin-right: auto;
+	padding: 40px 100px;
+	max-width: 500px;
+}
+.intro p {
+	font-size: 20px; line-height: 27px;
+	text-align: center;
+}
+
+
+
+
+/* ========= GREAT CAUSE BANNER =======*/
+.cause {
+	background-image: url("camouflage.jpg");
+	margin-bottom: 60px;
+	text-align: center;
+}
+.alignmiddle {
+	vertical-align: middle;
+}
+.cause img {
+	display: inline-block;
+	height: 175px;
+}
+.cause .text {
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
+}
+.cause h3 {
+	padding-bottom: 16px;
+}
+.cause p {
+	font-size: 18px; line-height: 21px;
+}
+.red {
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+/* =========ICON SECTION========== */
+.bubcontain {
+	max-width: 850px; 
+	margin-right: auto; margin-left: auto;
+}
+.singlebub {
+	width: 26%;
+	text-align: center;
+	display: inline-block;
+	padding: 0% 3%;
+	vertical-align: top;
+}
+.singlebub h3 {
+	padding-bottom: 10px;
+}
+
+.icon {
+	background-color: #e74c3c;
+	height: 150px; width: 150px;
+	border-radius: 50%;
+	margin-left: auto; margin-right: auto;
+	margin-bottom: 20px;
+}
+
+svg {
+	display: block;
+	margin: auto;
+	position: relative; top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+path {
+	fill:none; stroke:#FFFFFF; stroke-width:3; 
+	stroke-linecap:round; stroke-linejoin:round; 
+	stroke-miterlimit:10; 	
+}
+polyline {
+	fill:none; stroke:#FFFFFF; stroke-width:3; 
+	stroke-linecap:round; stroke-linejoin:round; 
+	stroke-miterlimit:10; 	
+}
+.st0 { 
+	opacity: 0;
+	stroke-dasharray:400;
+	stroke-dashoffset:400;
+}
+.st1{ 
+	opacity: 0;
+	stroke-width:2.5;
+	stroke-dasharray:100;
+	stroke-dashoffset:100;
+}
+.st2{ 
+	opacity: 0;
+	stroke-width:2.5;
+	stroke-dasharray:150;
+	stroke-dashoffset:150;
+}
+.st3 { 
+	opacity: 0;
+	stroke-dasharray:350;
+	stroke-dashoffset:350;
+}
+.st4 { 
+	opacity: 0;
+	stroke-dasharray:80;
+	stroke-dashoffset:80;
+}
+.st5 { 
+	opacity: 0;
+	stroke-dasharray:350;
+	stroke-dashoffset:350;
+}
+
+.iconanimate2.fade-in {
+	animation: dash 1.25s .2s ease-out forwards;
+}
+.iconanimate4.fade-in {
+	animation: dash 1.25s .45s ease-out forwards;
+}
+.iconanimate6.fade-in {
+	animation: dash 1.25s .6s ease-out forwards;
+}
+
+
+@keyframes dash {
+	to {stroke-dashoffset: 0;
+		opacity:1;}
+}
+
+
+
+
+/*========== Quote ===========*/
+.quote {
+	background-color: #34495e;
+	color: white;
+	text-align: center;
+	margin-top: 80px;
+}
+.color { 
+	background-color: red;
+	transition: background-color 1s ease-out .25s;
+}
+.quote .text {
+	padding-top: 40px;
+}
+.quote h3 {
+	padding-bottom: 10px;
+}
+.formcontainer {
+	margin-left: auto; margin-right: auto;
+	max-width: 600px;
+	padding: 40px 0px;
+}
+form {
+	text-align: left;
+}
+label {
+	display: block;
+	padding-bottom: 6px; padding-top: 14px;
+	font-size: 12px;
+}
+input {
+	background-color: #ecf0f1;
+	border: 0px;
+	font-size: 14px;
+	padding: 7px;
+	width: 350px;
+}
+textarea {
+	background-color: #ecf0f1;
+	border: 0px;
+	font-size: 14px;
+	padding: 7px;
+	width: 600px; height: 125px;
+}
+button {
+	color: white;
+	background-color: #e74c3c;
+	border: 0px;
+	font-size: 14px; font-weight: 700;
+	padding: 10px 30px;
+	margin-top: 16px;
+}
+
+
+
+/*========== FOOTER ===========*/
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #2c3e50;
+	color: white;
+	text-align: center;
+	min-height: 200px;
+}
+footer img {
+	display: inline-block;
+	width: 100px;
+	padding: 15px 40px 0px 0px;
+	vertical-align: top;
+	display: none;
+}
+.address {
+	padding: 0; display: inline-block;
+	vertical-align: top;
+}
+.column {
+	width: auto; max-width: 300px;
+	padding-top: 40px; padding-right: 50px;
+	text-align: left;
+	display: inline-block;
+	//background-color: orange;
+	vertical-align: top;
+}
+.column.about {
+	padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+/*=========== RSPONSIVE ===========*/
+
+@media (max-width: 850px) {
+	.column {
+		display: block;
+		margin-left: auto; margin-right: auto;
+		width: 250px;
+		padding: 20px 0px;
+		//text-align: center;
+	}
+	.column.about {
+		padding-bottom: 40px;
+	}
+	textarea {
+		width: 80vw;
+	}
+}
+
+
+@media (max-width: 640px) {
+	.singlebub {
+		width: 70%;
+		display: block;
+		padding: 0px 15% 50px 15%;
+	}
+	.intro {
+		padding: 40px 40px;
+	}
+	.formcontainer {
+		max-width: 80vw;
+	}
+	textarea {
+		width: 95%;
+	}
+	.alignmiddle {
+		vertical-align: initial;
+	}
+	.cause img {
+		display: block;
+		margin-left: auto; margin-right: auto;
+	}
+	.cause .text {
+		display: block;
+		text-align: center;
+		padding: 0px 60px 30px 60px;
+	}
+}
+
+
+
+@media (max-width: 460px) {
+	input {
+		width: 95%;
+	}
+}
