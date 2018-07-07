@@ -380,7 +380,7 @@ header {
 
 /*----------------------------------------------------
                        MAYBE UNIVERSAL-MAYBE PROJECT ONLY????
-                       AT LEAST: 1950, WAYNE,
+                       AT LEAST: 1950, WAYNE, NOLAN
 ----------------------------------------------------*/
 img.half {
     width: 100%;
@@ -656,6 +656,82 @@ hr {
 
 
 
+/*----------------------------------------------------
+                        TYPEFACE
+----------------------------------------------------*/
+.header .retrodanger {
+	background-image: url("images/Header-bg-01.png");
+	background-size: 100%; 
+}
+.header .vintage {
+	background-image: url("Header-bg-02.png");
+	background-size: 100%;
+}
+.header .strong {
+	background-image: url("Header-bg-03.png");
+	background-size: 100%;
+}
+.header .industrial {
+	background-image: url("Header-bg-04.png");
+	background-size: 100%;
+}
+.mockups {
+    width: 100%;
+}
+.mockups img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+.mockups img:nth-child(1) {
+    padding-top: 30px;
+}
+
+.typesample {
+	padding: 0px 12px;
+	//width: 100%;
+	padding-top: 63px;
+}
+.typesample .left {
+	clear: both;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.typesample .right {
+	display: none;
+}
+.typesample .mobile {
+	display: block;
+	width: 100%;
+}
+
+
+
+
+/*----------------------------------------------------
+                       VONNEGUT
+----------------------------------------------------*/
+.gif {
+	width: 100%;
+	padding: 30px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -793,6 +869,27 @@ hr {
 		vertical-align:top;
 	}
 }
+
+
+
+@media only screen and (min-width: 768px) {
+	/*--TYPEFACE--*/
+	.typesample .left {
+		float: left;
+		width: 68%;
+		padding: 0;
+		margin: 0;
+	}
+	.typesample .right {
+		display: inline-block;
+		float: right;
+		width: 32%;
+	}
+	.typesample .mobile {
+		display: none;
+	}
+}
+
 
 
 
